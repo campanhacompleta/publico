@@ -1,0 +1,8 @@
+src/node_modules/*
+src/bower_components/*
+src/.sass-cache/*
+
+*.sublime-workspace
+*.sublime-project
+
+.DS_Store
