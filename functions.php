@@ -129,6 +129,9 @@ function publico_scripts() {
 	wp_register_style( 'publico-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'publico-style-main');
 
+	// Main JS
+	wp_enqueue_script( 'fluxo-foundation', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
+
 	wp_enqueue_script( 'publico-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'publico-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
