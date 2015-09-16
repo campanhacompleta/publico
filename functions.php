@@ -116,6 +116,11 @@ add_action( 'widgets_init', 'publico_widgets_init' );
 function publico_scripts() {
 	wp_enqueue_style( 'publico-style', get_stylesheet_uri() );
 
+	// Foundation
+	wp_enqueue_style( 'fluxo-foundation-css', get_template_directory_uri() . '/assets/css/foundation.min.css', '', '5.5.2' );
+	wp_enqueue_style( 'fluxo-foundation-css' );
+	wp_enqueue_script( 'fluxo-foundation', get_template_directory_uri() . '/assets/js/foundation.min.js', array( 'jquery' ), '5.5.2', true );
+
 	// Google Fonts
 	wp_register_style( 'fluxo-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' );
 	wp_enqueue_style( 'fluxo-google-fonts' );
