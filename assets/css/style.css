@@ -585,6 +585,11 @@ a {
 .site__section {
   padding: 1.5em 0; }
 
+.site-header,
+.site-footer,
+.widget {
+  background-color: #f2f2f2; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

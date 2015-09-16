@@ -1,3 +1,9 @@
 .site__section {
 	padding: 1.5em 0;
 }
+
+.site-header,
+.site-footer,
+.widget {
+	background-color: $color__third;
+}
