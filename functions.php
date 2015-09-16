@@ -116,6 +116,10 @@ add_action( 'widgets_init', 'publico_widgets_init' );
 function publico_scripts() {
 	wp_enqueue_style( 'publico-style', get_stylesheet_uri() );
 
+	// Google Fonts
+	wp_register_style( 'fluxo-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' );
+	wp_enqueue_style( 'fluxo-google-fonts' );
+
 	// Main theme style
 	wp_register_style( 'publico-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'publico-style-main');
