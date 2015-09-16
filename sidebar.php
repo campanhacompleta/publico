@@ -7,13 +7,13 @@
  * @package Público
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-main' ) ) {
 	return;
 }
 ?>
 
 <div class="medium-4 columns">
-	<div id="secondary" class="widget-area site__section" role="complementary">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<div id="secondary" class="widget-area widget-area--main site__section" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-main' ); ?>
 	</div><!-- #secondary -->
 </div>

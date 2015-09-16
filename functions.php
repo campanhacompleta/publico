@@ -100,12 +100,12 @@ add_action( 'after_setup_theme', 'publico_content_width', 0 );
 function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'publico' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar-main',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'publico_widgets_init' );
