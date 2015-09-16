@@ -11,14 +11,29 @@
 
 ?>
 
+		</div><!-- .row -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'publico' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'publico' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'publico' ), 'publico', '<a href="http://redelivre.org.br" rel="designer">redelivre</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="row">
+			<div class="medium-12 columns">
+				<div class="site-info">
+		    		<div class="medium-6 columns">
+		    			<div class="site-credits">
+				    		<strong>PRJ</strong> &bull; Licença para uso do material
+				    	</div>
+				    </div>
+				    <div class="medium-6 columns">
+				    	<div class="site-social medium-text-right">
+				    		<a href="#">Facebook</a>
+				    		<a href="#">Twitter</a>
+				    		<a href="#">Instagram</a>
+				    		<a href="#">RSS</a>
+				    	</div>
+				    </div>
+	    		</div>
+    		</div>
+    	</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
