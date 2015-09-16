@@ -14,7 +14,7 @@
 		</div><!-- .row -->
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer site__section" role="contentinfo">
 		<div class="row">
 			<div class="medium-12 columns">
 				<div class="site-info">

@@ -24,7 +24,7 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'publico' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header site__section" role="banner">
 		<div class="row">
 			<div class="medium-12 columns">
 				<div class="site-branding">
@@ -44,5 +44,5 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content site__section">
 		<div class="row">
