@@ -1,0 +1,20 @@
+{
+  "name": "Publico",
+  "version": "0.0.1",
+  "homepage": "https://github.com/campanhacompleta/publico",
+  "authors": [
+    "Eduardo Zulian <eduardozulian@gmail.com>"
+  ],
+  "main": "bower.json",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}
