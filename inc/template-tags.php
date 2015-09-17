@@ -7,6 +7,38 @@
  * @package Público
  */
 
+if ( ! function_exists( 'publico_the_page_header' ) ) :
+/**
+ * Prints HTML with meta information for the current post-date/time and author.
+ */
+function publico_the_page_header() {
+	global $post;
+
+	if ( is_front_page() && is_home() ) {
+		return;
+	}
+
+	if ( is_singular() ) {
+		$page_header_content = '<h1 class="entry-title page-title">' . get_the_title( $post->ID ) . '</h1>';
+	}
+	elseif ( is_search() ) {
+		$page_header_content = '<h1 class="page-title">' . sprintf( esc_html__( 'Search Results for: %s', 'publico' ), '<span>' . get_search_query() ) . '</span></h1>';
+	}
+	else {
+		$page_header_content = '<h1 class="page-title">' . get_the_archive_title() . '</h1>';
+		$description = get_the_archive_description();
+
+	    if ( $description ) {
+	        $page_header_content .= '<div class="page-description taxonomy-description">' . $description . '</div>';
+	    }
+	}
+	
+	echo '<header class="page-header site__section"><div class="row"><div class="large-12 columns">';
+	echo $page_header_content;
+	echo '</div></div></header><!-- .page-header -->';
+}
+endif;
+
 if ( ! function_exists( 'publico_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.

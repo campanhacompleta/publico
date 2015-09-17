@@ -54,4 +54,7 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content site__section">
+
+		<?php publico_the_page_header(); ?>
+		
 		<div class="row">
