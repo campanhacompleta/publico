@@ -33,7 +33,7 @@ function publico_the_page_header() {
 	    }
 	}
 	
-	echo '<header class="page-header site__section"><div class="row"><div class="large-12 columns">';
+	echo '<header class="page-header site__section" aria-hidden="true"><div class="row"><div class="large-12 columns">';
 	echo $page_header_content;
 	echo '</div></div></header><!-- .page-header -->';
 }
