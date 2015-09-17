@@ -379,8 +379,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 2px solid #aa2446; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -407,13 +406,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #302f5f; }
   a:visited {
-    color: purple; }
+    color: rgba(48, 47, 95, 0.3); }
   a:hover,
   a:focus,
   a:active {
-    color: midnightblue; }
+    color: #aa2446; }
   a:focus {
     outline: thin dotted; }
   a:hover,
@@ -576,6 +575,9 @@ a {
 .widget-area--main .widget {
   background-color: #f2f2f2; }
 
+.widget-area--content-bottom {
+  background-color: #f2f2f2; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
@@ -589,13 +591,20 @@ a {
 .site__section {
   padding: 1.5em 0; }
 
-.site-header,
-.site-footer {
-  background-color: #f2f2f2; }
-
+/* Site header */
 .site-header .site-title {
   font-size: 1.5em;
   margin: 0; }
+
+.site-header .site-description {
+  margin-bottom: 0; }
+
+/* Site footer */
+.site-footer {
+  background-color: #302f5f;
+  color: #fff; }
+  .site-footer .site-info {
+    background-color: #aa2446; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

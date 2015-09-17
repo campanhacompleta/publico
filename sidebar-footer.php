@@ -12,11 +12,11 @@ if ( ! is_active_sidebar( 'sidebar-footer' ) ) {
 }
 ?>
 
-<div class="row">
-	<div class="large-12 columns">
-		<div id="quaternary" class="widget-area widget-area--footer site__section" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-footer' ); ?>
-		</div><!-- #secondary -->
+<div id="quaternary" class="widget-area widget-area--footer site__section" role="complementary">
+	<div class="row">
+		<div class="large-12 columns">		
+			<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+		</div>
 	</div>
-</div>
+</div><!-- .widget-area--footer -->
 
