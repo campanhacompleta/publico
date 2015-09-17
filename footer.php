@@ -14,7 +14,11 @@
 		</div><!-- .row -->
 	</div><!-- #content -->
 
+	<?php get_sidebar( 'content-bottom' ); ?>
+
 	<footer id="colophon" class="site-footer site__section" role="contentinfo">
+
+		<?php get_sidebar( 'footer' ); ?>
 		<div class="row">
 			<div class="medium-12 columns">
 				<div class="site-info">
