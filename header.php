@@ -29,6 +29,15 @@
 			
 			<div class="small-6 columns">
 				<div class="site-branding">
+					<?php
+					    $logo = get_theme_mod( 'publico_logo' );
+					    if ( isset( $logo ) && ! empty( $logo ) ) : ?>
+				            <a href="<?php echo home_url( '/' ); ?>" rel="home">
+				                <img class="site-logo" src="<?php echo $logo; ?>" alt="<?php bloginfo ( 'name' ); ?>" />
+				            </a>
+					    <?php
+					    endif;
+				    ?>
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
