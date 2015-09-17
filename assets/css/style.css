@@ -567,13 +567,13 @@ a {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
-  padding: 1.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
 
 .widget-area--main .widget {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  padding: 1.5em; }
 
 .widget-area--content-bottom {
   background-color: #f2f2f2; }
