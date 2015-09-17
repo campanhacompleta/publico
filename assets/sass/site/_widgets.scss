@@ -5,17 +5,53 @@
 	select {
 		max-width: 100%;
 	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .widget-area--main {
 	.widget {
 		background-color: $color__third;
 		padding: 1.5em;
+
+		.widget-title {
+			color: $color__first;
+		}
 	}
 }
 
 .widget-area--content-bottom {
 	background-color: $color__third;
+
+	a {
+		color: #fff;
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-hover;
+		}
+	}
+}
+
+.widget-area--footer {
+	.widget-title {
+		color: #fff;
+	}
+
+	a {
+		color: #fff;
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-hover;
+		}
+	}
 }
 
 /* Search widget. */

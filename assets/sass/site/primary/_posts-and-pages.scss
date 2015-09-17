@@ -25,4 +25,10 @@
 .page-header {
 	background-color: $color__first;
 	color: #fff;
+	
+	.entry-title,
+	.page-title {
+		color: inherit;
+		margin-bottom: 0;
+	}
 }

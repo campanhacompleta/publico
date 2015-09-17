@@ -231,13 +231,15 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
 
 p {
   margin-bottom: 1.5em; }
@@ -253,7 +255,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -308,6 +310,7 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
+  font-size: inherit;
   margin: 0 0 1.5em 3em; }
 
 ul {
@@ -406,7 +409,8 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #302f5f; }
+  color: #302f5f;
+  font-weight: bold; }
   a:visited {
     color: rgba(48, 47, 95, 0.3); }
   a:hover,
@@ -570,13 +574,35 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 
 .widget-area--main .widget {
   background-color: #f2f2f2;
   padding: 1.5em; }
+  .widget-area--main .widget .widget-title {
+    color: #302f5f; }
 
 .widget-area--content-bottom {
   background-color: #f2f2f2; }
+  .widget-area--content-bottom a {
+    color: #fff; }
+    .widget-area--content-bottom a:hover,
+    .widget-area--content-bottom a:focus,
+    .widget-area--content-bottom a:active {
+      color: #aa2446; }
+
+.widget-area--footer .widget-title {
+  color: #fff; }
+
+.widget-area--footer a {
+  color: #fff; }
+  .widget-area--footer a:hover,
+  .widget-area--footer a:focus,
+  .widget-area--footer a:active {
+    color: #aa2446; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -594,9 +620,11 @@ a {
 /* Site header */
 .site-header .site-title {
   font-size: 1.5em;
+  font-weight: bold;
   margin: 0; }
 
 .site-header .site-description {
+  font-style: italic;
   margin-bottom: 0; }
 
 /* Site footer */
@@ -631,6 +659,10 @@ a {
 .page-header {
   background-color: #302f5f;
   color: #fff; }
+  .page-header .entry-title,
+  .page-header .page-title {
+    color: inherit;
+    margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 ## Asides
