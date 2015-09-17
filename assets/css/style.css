@@ -463,7 +463,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 40.0625em) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -592,6 +592,10 @@ a {
 .site-header,
 .site-footer {
   background-color: #f2f2f2; }
+
+.site-header .site-title {
+  font-size: 1.5em;
+  margin: 0; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
