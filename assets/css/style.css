@@ -623,6 +623,24 @@ a {
   font-style: italic;
   margin-bottom: 0; }
 
+/* Front Page */
+.site-news__main .entry-title {
+  background-color: #302f5f;
+  margin: 0;
+  padding: 0.5em; }
+  .site-news__main .entry-title a {
+    color: #fff; }
+
+.site-news__main .entry-content {
+  padding: 0.5em; }
+
+.site-news__aside .hentry {
+  background-color: #f2f2f2; }
+
+.site-news__aside .entry-title {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
 /* Site footer */
 .site-footer {
   background-color: #302f5f;
@@ -632,6 +650,26 @@ a {
 
 /* Helpers */
 .wide {
+  width: 100%; }
+
+/* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
+.flag {
+  display: table;
+  width: 100%; }
+  .flag .flag__img,
+  .flag .flag__body {
+    display: table-cell;
+    vertical-align: middle; }
+
+.flag__image {
+  margin-right: 0.5em;
+  white-space: nowrap;
+  padding-right: 10px; }
+  .flag__image img {
+    display: block;
+    max-width: none; }
+
+.flag__body {
   width: 100%; }
 
 /*--------------------------------------------------------------

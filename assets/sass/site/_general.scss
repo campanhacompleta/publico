@@ -16,6 +16,33 @@
 	}
 }
 
+/* Front Page */
+.site-news__main {
+	.entry-title {
+		background-color: $color__first;
+		margin: 0;
+		@include padding-main();
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.entry-content {
+		@include padding-main();
+	}
+}
+
+.site-news__aside {
+	.hentry {
+		background-color: $color__third;
+	}
+
+	.entry-title {
+		@include font-size(1.25);
+	}
+}
+
 /* Site footer */
 .site-footer {
 	background-color: $color__first;
@@ -28,5 +55,33 @@
 
 /* Helpers */
 .wide {
+	width: 100%;
+}
+
+/* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
+.flag {
+	display: table;
+	width: 100%;
+
+	.flag__img,
+	.flag__body {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.flag__image {
+	margin-right: 0.5em;
+	white-space: nowrap;
+
+	padding-right: 10px;
+
+    img {
+        display: block;
+        max-width: none;
+    }
+}
+
+.flag__body {
 	width: 100%;
 }

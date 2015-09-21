@@ -21,3 +21,8 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// General padding for the elements
+@mixin padding-main() {
+	padding: 0.5em;
+}
