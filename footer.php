@@ -16,6 +16,12 @@
 
 	<?php get_sidebar( 'content-bottom' ); ?>
 
+	<?php
+		if ( ! ( is_front_page() && is_home() ) ) {
+			publico_the_newsletter();
+		}
+	?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php get_sidebar( 'footer' ); ?>
