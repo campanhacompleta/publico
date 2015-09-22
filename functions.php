@@ -104,7 +104,7 @@ function publico_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 class="widget-title area__title">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -114,7 +114,7 @@ function publico_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s medium-4 columns">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 class="widget-title area__title">',
 		'after_title'   => '</h4>',
 	) );
 
@@ -124,7 +124,7 @@ function publico_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s medium-4 columns">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h4 class="widget-title">',
+		'before_title'  => '<h4 class="widget-title area__title">',
 		'after_title'   => '</h4>',
 	) );
 }

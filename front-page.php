@@ -72,7 +72,7 @@ get_header(); ?>
 			<section class="site-extras site__section">
 				<div class="large-7 columns">
 					<div class="site-extras--video">
-						<h4 class="section__title">Vídeo</h4>
+						<h4 class="area__title">Vídeo</h4>
 						<?php
 						$video = new WP_Query( array (
 							'posts_per_page' => 1,
@@ -115,7 +115,8 @@ get_header(); ?>
 				
 				<div class="large-5 columns">
 					<div class="site-extras--events">
-						<h4 class="section__title">Agenda</h4>
+						<h4 class="area__title">Agenda</h4>
+
 						<ul>
 							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia consectetur, culpa illum? Necessitatibus asperiores libero deleniti facere laudantium eligendi vitae doloribus cumque maxime praesentium est fugiat error, ullam excepturi!</li>
 							<li>Illo, expedita, nesciunt! Perspiciatis veritatis quaerat culpa, saepe obcaecati ducimus. Veritatis officia, pariatur, ad voluptatem excepturi doloribus commodi perspiciatis nemo molestiae asperiores libero facilis vel? Facilis nihil esse rem deserunt.</li>
