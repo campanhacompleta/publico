@@ -106,6 +106,27 @@ function publico_the_newsletter() {
 }
 endif;
 
+if ( ! function_exists( 'publico_the_first_embed' ) ) :
+/**
+ * Prints HTML with the first embed inside the post content
+ *
+ * @uses get_media_embedded_in_content()
+ */
+function publico_the_first_embed( $post_id ) {
+    $post = get_post( $post_id );
+
+    // Get the content, apply filters and execute shortcodes
+    $content = do_shortcode( apply_filters( 'the_content', $post->post_content ) );
+    $embeds = get_media_embedded_in_content( $content );
+
+    if( ! empty ( $embeds ) ) {
+    	// The first item of the array is the first embedded media in the content
+		$first_embed = $embeds[0];
+		echo $first_embed;
+   	}
+}
+endif;
+
 if ( ! function_exists( 'publico_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
