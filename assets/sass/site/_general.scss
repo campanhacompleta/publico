@@ -20,7 +20,7 @@
 	}
 }
 
-/* Front Page */
+/* Site News */
 .site-news__main {
 	.entry-title {
 		background-color: $color__first;
@@ -44,6 +44,13 @@
 
 	.entry-title {
 		@include font-size(1.25);
+	}
+}
+
+/* Site Newsletter */
+.site-newsletter {
+	&.site-newsletter--front-page {
+		background-color: $color__third;
 	}
 }
 

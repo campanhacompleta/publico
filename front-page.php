@@ -11,8 +11,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php publico_the_newsletter(); ?>
 			
 			<section class="site-news site__section">
 				<div class="medium-7 columns">

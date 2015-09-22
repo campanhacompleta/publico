@@ -62,6 +62,12 @@
 		<?php endif; // End header image check. ?>
 	</header><!-- #masthead -->
 
+	<?php 
+		if ( is_front_page() ) {
+			publico_the_newsletter();
+		}
+	?>
+
 	<div id="content" class="site-content site__section">
 
 		<?php publico_the_page_header(); ?>

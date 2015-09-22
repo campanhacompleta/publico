@@ -76,8 +76,15 @@ if ( ! function_exists( 'publico_the_newsletter' ) ) :
  * Prints HTML with the newsletter form
  */
 function publico_the_newsletter() {
+
+	if ( is_front_page() ) {
+		$newsletter_class="site-newsletter site-newsletter--front-page";
+	}
+	else {
+		$newsletter_class="site-newsletter";
+	}
 	
-	echo '<div class="site-newsletter site__section"><div class="row">';
+	echo '<div class="' . $newsletter_class . ' site__section"><div class="row">';
 	echo '
 	<div class="sendpress-signup-form">
 			<h4 class="area__title">Cadastre-se</h4>

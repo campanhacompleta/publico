@@ -627,7 +627,7 @@ a {
   font-style: italic;
   margin-bottom: 0; }
 
-/* Front Page */
+/* Site News */
 .site-news__main .entry-title {
   background-color: #302f5f;
   margin: 0;
@@ -644,6 +644,10 @@ a {
 .site-news__aside .entry-title {
   font-size: 20px;
   font-size: 1.25rem; }
+
+/* Site Newsletter */
+.site-newsletter.site-newsletter--front-page {
+  background-color: #f2f2f2; }
 
 /* Site footer */
 .site-footer {
