@@ -71,52 +71,58 @@ get_header(); ?>
 
 			<section class="site-extras site__section">
 				<div class="large-7 columns">
-					<?php
-					$video = new WP_Query( array (
-						'posts_per_page' => 1,
-						'ignore_sticky_posts' => true,
-						'tax_query' => array(
-							array(
-								'taxonomy' => 'post_format',
-								'field'    => 'slug',
-								'terms'    => array( 'post-format-video' ),
-							),
-						)
-					) );
+					<div class="site-extras--video">
+						<h4 class="section__title">Vídeo</h4>
+						<?php
+						$video = new WP_Query( array (
+							'posts_per_page' => 1,
+							'ignore_sticky_posts' => true,
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'post_format',
+									'field'    => 'slug',
+									'terms'    => array( 'post-format-video' ),
+								),
+							)
+						) );
 
-					if ( $video->have_posts() ) :
-						while ( $video->have_posts() ) : $video->the_post(); ?>
+						if ( $video->have_posts() ) :
+							while ( $video->have_posts() ) : $video->the_post(); ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'hentry--columns clear' ); ?>>
-							<header class="entry-header">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'hentry--columns clear' ); ?>>
+								<header class="entry-header">
 
-								<?php publico_the_first_embed( $post->ID ); ?>
+									<?php publico_the_first_embed( $post->ID ); ?>
 
-								<div class="entry-video">
-									<?php echo $fist_embedded; ?>
-								</div><!-- .entry-video -->
+									<div class="entry-video">
+										<?php echo $fist_embedded; ?>
+									</div><!-- .entry-video -->
 
-							</header><!-- .entry-header -->
+								</header><!-- .entry-header -->
 
-							<div class="entry-content">
-								<?php //the_content(); ?>
-							</div>
-						</article>
+								<div class="entry-content">
+									<?php //the_content(); ?>
+								</div>
+							</article>
 
-					<?php
-						endwhile;
-						wp_reset_postdata();
-					endif;
-					?>
+						<?php
+							endwhile;
+							wp_reset_postdata();
+						endif;
+						?>
+					</div>
 				</div>
 				
 				<div class="large-5 columns">
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia consectetur, culpa illum? Necessitatibus asperiores libero deleniti facere laudantium eligendi vitae doloribus cumque maxime praesentium est fugiat error, ullam excepturi!</li>
-						<li>Illo, expedita, nesciunt! Perspiciatis veritatis quaerat culpa, saepe obcaecati ducimus. Veritatis officia, pariatur, ad voluptatem excepturi doloribus commodi perspiciatis nemo molestiae asperiores libero facilis vel? Facilis nihil esse rem deserunt.</li>
-						<li>Vero repellat porro, laborum adipisci tenetur quibusdam sapiente veritatis at dicta blanditiis, laboriosam doloribus nobis, sint officiis, odio ipsum laudantium corporis numquam velit voluptates quo neque obcaecati? Fugit, facilis, voluptatum?</li>
-						
-					</ul>
+					<div class="site-extras--events">
+						<h4 class="section__title">Agenda</h4>
+						<ul>
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia consectetur, culpa illum? Necessitatibus asperiores libero deleniti facere laudantium eligendi vitae doloribus cumque maxime praesentium est fugiat error, ullam excepturi!</li>
+							<li>Illo, expedita, nesciunt! Perspiciatis veritatis quaerat culpa, saepe obcaecati ducimus. Veritatis officia, pariatur, ad voluptatem excepturi doloribus commodi perspiciatis nemo molestiae asperiores libero facilis vel? Facilis nihil esse rem deserunt.</li>
+							<li>Vero repellat porro, laborum adipisci tenetur quibusdam sapiente veritatis at dicta blanditiis, laboriosam doloribus nobis, sint officiis, odio ipsum laudantium corporis numquam velit voluptates quo neque obcaecati? Fugit, facilis, voluptatum?</li>
+							
+						</ul>
+					</div>
 				</div>
 			</section>
 
