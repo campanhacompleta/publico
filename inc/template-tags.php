@@ -84,32 +84,37 @@ function publico_the_newsletter() {
 		$newsletter_class="site-newsletter";
 	}
 	
-	echo '<div class="' . $newsletter_class . ' site__section"><div class="row">';
+	echo '<div class="' . $newsletter_class . ' site__section">';
 	echo '
 	<div class="sendpress-signup-form">
+
+			<div class="row"><div class="large-12 columns">
 			<h4 class="area__title">Cadastre-se</h4>
-			<form id="sendpress_signup" method="POST" class="sendpress-signup">
-									
-				<div id="form-wrap">
-					<div class="medium-4 columns">
-					<p name="firstname">
-						<input type="text" class="sp_firstname" orig="Nome" value="" placeholder="Nome" name="sp_firstname">
-					</p>
+			</div></div>
+
+			<div class="row">
+				<form id="sendpress_signup" method="POST" class="sendpress-signup">
+					<div id="form-wrap">
+						<div class="medium-4 columns">
+						<p name="firstname">
+							<input type="text" class="sp_firstname" orig="Nome" value="" placeholder="Nome" name="sp_firstname">
+						</p>
+						</div>
+						<div class="medium-4 columns">
+						<p name="email">
+							<input type="text" class="sp_email" orig="E-Mail" value="" placeholder="Email" name="sp_email">
+						</p>
+						</div>
+						<div class="medium-4 columns">
+						<p class="submit">
+							<input value="Cadastrar" class="sendpress-submit button small wide" type="submit" id="submit" name="submit">
+						</p>
+						</div>
 					</div>
-					<div class="medium-4 columns">
-					<p name="email">
-						<input type="text" class="sp_email" orig="E-Mail" value="" placeholder="Email" name="sp_email">
-					</p>
-					</div>
-					<div class="medium-4 columns">
-					<p class="submit">
-						<input value="Cadastrar" class="sendpress-submit button small wide" type="submit" id="submit" name="submit">
-					</p>
-					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>';
-	echo '</div></div>';
+	echo '</div>';
 
 }
 endif;
