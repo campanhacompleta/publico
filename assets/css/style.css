@@ -574,6 +574,8 @@ a {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+  .widget p:last-child {
+    margin-bottom: 0; }
 
 .widget-area--main .widget {
   background-color: #f2f2f2;
