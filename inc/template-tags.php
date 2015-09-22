@@ -80,6 +80,7 @@ function publico_the_newsletter() {
 	echo '<div class="site-newsletter site__section"><div class="row">';
 	echo '
 	<div class="sendpress-signup-form">
+			<h4 class="area__title">Cadastre-se</h4>
 			<form id="sendpress_signup" method="POST" class="sendpress-signup">
 									
 				<div id="form-wrap">
