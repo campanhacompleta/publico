@@ -34,6 +34,10 @@
 	color: #fff;
 
 	@include link-color--reverse();
+
+	.widget-title {
+		color: #fff;
+	}
 }
 
 .widget-area--content-bottom {

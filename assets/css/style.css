@@ -593,6 +593,8 @@ a {
     .widget-area--social-engagement a:focus,
     .widget-area--social-engagement a:active {
       color: #aa2446; }
+  .widget-area--social-engagement .widget-title {
+    color: #fff; }
 
 .widget-area--content-bottom {
   background-color: #f2f2f2; }
