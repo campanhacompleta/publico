@@ -14,7 +14,7 @@ if ( ! function_exists( 'publico_the_page_header' ) ) :
 function publico_the_page_header() {
 	global $post;
 
-	if ( is_front_page() && is_home() ) {
+	if ( is_front_page() ) {
 		return;
 	}
 

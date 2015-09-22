@@ -53,7 +53,7 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</div>
-		<?php if ( is_front_page() && is_home() && get_header_image() ) : ?>
+		<?php if ( is_front_page() && get_header_image() ) : ?>
 			<div class="header-image">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">

@@ -17,7 +17,7 @@
 	<?php get_sidebar( 'content-bottom' ); ?>
 
 	<?php
-		if ( ! ( is_front_page() && is_home() ) ) {
+		if ( ! ( is_front_page() ) ) {
 			publico_the_newsletter();
 		}
 	?>
