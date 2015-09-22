@@ -33,7 +33,7 @@
 				<div class="medium-12 columns">
 		    		<div class="medium-6 columns">
 		    			<div class="site-credits">
-				    		<strong>PRJ</strong> &bull; Licença para uso do material
+		    				<?php echo get_theme_mod( 'publico_footer_text' ); ?>
 				    	</div>
 				    </div>
 				    <div class="medium-6 columns">

@@ -33,6 +33,31 @@ function publico_customize_register( $wp_customize ) {
         'settings'  => 'publico_logo',
         //'context'   => 'publico-custom-logo'
     ) ) );
+
+    // Footer section
+    $wp_customize->add_section( 'publico_footer', array(
+        'title'    => __( 'Footer', 'publico' ),
+        'priority' => 30,
+    ) );
+    
+    // Footer section: text
+    $wp_customize->add_setting( 'publico_footer_text', array(
+        'capability'    => 'edit_theme_options',
+        'default'       => __( 'Proudly powered by WordPress', 'publico' ),
+        'sanitize_callback' => 'publico_sanitize_footer_text',
+    ) );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'publico_footer_text_control',
+            array(
+                'label'          => __( 'Footer text', 'publico' ),
+                'section'        => 'publico_footer',
+                'settings'       => 'publico_footer_text',
+            )
+        )
+    );
 }
 add_action( 'customize_register', 'publico_customize_register' );
 
@@ -56,6 +81,18 @@ function publico_get_customizer_logo_size( $value ) {
 	    $value = $image_attributes[0];
 	}
     return $value;
+}
+
+/**
+ * Sanitize Footer Text
+ * 
+ * @param  string $value The string
+ * @return string $value The new string
+ *
+ * @uses strip_tags
+ */
+function publico_sanitize_footer_text( $value ) {
+    return strip_tags( $value, '<br><br/><em><strong>');
 }
 
 /**
