@@ -116,12 +116,11 @@ get_header(); ?>
 				<div class="large-5 columns">
 					<div class="site-extras--events">
 						<h4 class="area__title">Agenda</h4>
-
 						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quia consectetur, culpa illum? Necessitatibus asperiores libero deleniti facere laudantium eligendi vitae doloribus cumque maxime praesentium est fugiat error, ullam excepturi!</li>
-							<li>Illo, expedita, nesciunt! Perspiciatis veritatis quaerat culpa, saepe obcaecati ducimus. Veritatis officia, pariatur, ad voluptatem excepturi doloribus commodi perspiciatis nemo molestiae asperiores libero facilis vel? Facilis nihil esse rem deserunt.</li>
-							<li>Vero repellat porro, laborum adipisci tenetur quibusdam sapiente veritatis at dicta blanditiis, laboriosam doloribus nobis, sint officiis, odio ipsum laudantium corporis numquam velit voluptates quo neque obcaecati? Fugit, facilis, voluptatum?</li>
-							
+							<li><a href="#" title="">II Seminário Internacional</a><ul><li>22/09/2015 - 24/09/2015</li><li>Recife</li></ul></li>
+							<li><a href="#" title="">9° Congresso Brasileiro</a><ul><li>28/09/2015 - 01/10/2015</li><li>Belém</li></ul></li>
+							<li><a href="#" title="">29° Encontro Nacional de Políticas Públicas </a><ul><li>28/09/2015 - 01/10/2015</li><li>Rio de Janeiro</li></ul></li>
+							<li class="all-events-link"><a href="#" class="button wide" title="todos os eventos">Ver todos os eventos</a></li>
 						</ul>
 					</div>
 				</div>
