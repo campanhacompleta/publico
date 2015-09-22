@@ -24,6 +24,14 @@
 	}
 }
 
+/* Social Engagement Area */
+.widget-area--social-engagement {
+	background-color: $color__first;
+	color: #fff;
+
+	@include link-color--reverse();
+}
+
 .widget-area--content-bottom {
 	background-color: $color__third;
 
@@ -43,15 +51,7 @@
 		color: #fff;
 	}
 
-	a {
-		color: #fff;
-		
-		&:hover,
-		&:focus,
-		&:active {
-			color: $color__link-hover;
-		}
-	}
+	@include link-color--reverse();
 }
 
 /* Search widget. */
