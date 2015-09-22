@@ -69,6 +69,8 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<?php get_sidebar( 'social-engagement' ); ?>
+
 			<section class="site-extras site__section">
 				<div class="large-7 columns">
 					<div class="site-extras--video">

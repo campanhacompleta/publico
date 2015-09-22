@@ -109,6 +109,16 @@ function publico_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'Social Engagement Area', 'publico' ),
+		'id'            => 'sidebar-social-engagement',
+		'description'   => 'Use this Front Page Widget to promote participation and civic engagement',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s medium-4 columns">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title area__title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Content Bottom', 'publico' ),
 		'id'            => 'sidebar-content-bottom',
 		'description'   => '',
