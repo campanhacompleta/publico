@@ -72,4 +72,6 @@
 
 		<?php publico_the_page_header(); ?>
 		
+		<?php if ( ! is_front_page() ) : ?>
 		<div class="row">
+		<?php endif; ?>

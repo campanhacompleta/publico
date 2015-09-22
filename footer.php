@@ -11,7 +11,9 @@
 
 ?>
 
+		<?php if ( ! is_front_page() ) : ?>
 		</div><!-- .row -->
+		<?php endif; ?>
 	</div><!-- #content -->
 
 	<?php get_sidebar( 'content-bottom' ); ?>
