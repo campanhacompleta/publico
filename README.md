@@ -19,6 +19,8 @@ A área principal do site. Aparece como barra lateral nas páginas internas.
 #### Content Secondary / Conteúdo secundário
 Presente apenas quando usamos a opção `front page`. Aparece logo abaixo da *Social Engagement Area*. É ideal para conteúdos variados como vídeos, lista de eventos etc.
 
+Nesta área, uma leve diferença: caso ela possua apenas dois widgets, ambos ficarão com tamanhos irregulares (2/3 da largura do site para o primeiro widget e 1/3 para o segundo). Havendo mais de dois widgets, a regra seguida é a mesma das outras áreas – ou seja, colunas de mesma largura.
+
 #### Content Bottom / Conteúdo secundário
 Presente em todas as páginas do site. Sua localização é logo acima do rodapé e ela é ideal para conteúdos como banners e imagens em destaque.
 
