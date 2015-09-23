@@ -12,7 +12,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title show-for-sr">', '</h1>' ); ?>
-
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="entry-image">
+				<?php the_post_thumbnail( 'large' ); ?>
+			</div><!-- .entry-image -->
+		<?php endif; ?>
 		<div class="entry-meta">
 			<?php publico_posted_on(); ?>
 		</div><!-- .entry-meta -->
