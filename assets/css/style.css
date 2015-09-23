@@ -715,6 +715,7 @@ a {
 
 /* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
 .flag {
+  background-color: #f2f2f2;
   display: table;
   width: 100%; }
   .flag .flag__image,
@@ -724,13 +725,13 @@ a {
 
 .flag__image {
   margin-right: 0.5em;
-  white-space: nowrap;
-  padding-right: 10px; }
+  white-space: nowrap; }
   .flag__image img {
     display: block;
     max-width: 125px; }
 
 .flag__body {
+  padding: 1em;
   width: 100%; }
 
 /* Extras: they shouldn't be here */
@@ -786,6 +787,11 @@ a {
 .archive .entry-header,
 .search .entry-header {
   margin-bottom: 1.5em; }
+
+.blog .hentry,
+.archive .hentry,
+.search .hentry {
+  margin: 0 0 3em; }
 
 /*--------------------------------------------------------------
 ## Asides
