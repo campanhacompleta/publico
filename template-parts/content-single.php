@@ -17,9 +17,6 @@
 				<?php the_post_thumbnail( 'large' ); ?>
 			</div><!-- .entry-image -->
 		<?php endif; ?>
-		<div class="entry-meta">
-			<?php publico_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

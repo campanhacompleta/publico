@@ -774,6 +774,8 @@ a {
   .page-header .page-title {
     color: inherit;
     margin-bottom: 0; }
+  .page-header a {
+    color: #fff; }
 
 /* Post Thumbnails */
 .single .entry-image {
