@@ -22,7 +22,7 @@ add_action( 'widgets_init', 'publico_register_widgets' );
 class Publico_Widget_Video extends WP_Widget {
 
 	public function __construct() {
-		$widget_ops = array('classname' => 'widget_featured_video', 'description' => __( "Feature a video from <em>post format Video</em>") );
+		$widget_ops = array('classname' => 'widget_featured_video', 'description' => __( "Feature a video from post format Video") );
 		parent::__construct('publico-featured-video', __('Featured Video'), $widget_ops);
 		$this->alt_option_name = 'widget_featured_video';
 
