@@ -5,7 +5,8 @@ input[type="submit"],
 .button {
 	border: 0;
 	background: $color__second;
-	color: #fff;
+	color: #fff !important; //TODO: fix this
+	font-family: $font__main;
 	line-height: 1;
 	text-transform: lowercase;
 

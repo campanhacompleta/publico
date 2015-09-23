@@ -42,16 +42,6 @@
 
 .widget-area--content-bottom {
 	background-color: $color__third;
-
-	a {
-		color: #fff;
-		
-		&:hover,
-		&:focus,
-		&:active {
-			color: $color__link-hover;
-		}
-	}
 }
 
 .widget-area--footer {

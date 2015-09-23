@@ -3,7 +3,7 @@
 }
 
 .area__title { /* This also applies to widget titles */ 
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 
 /* Site header */
@@ -60,7 +60,7 @@
 	}
 
 	input {
-		margin-bottom: 0;
+		margin: 0;
 	}
 }
 
@@ -71,6 +71,15 @@
 
 	.site-info {
 		background-color: $color__second;
+		@include font-size(0.875);
+	}
+
+	a {
+		color: #fff;
+
+		&:hover {
+			color: $color__third;
+		}
 	}
 }
 
@@ -120,4 +129,10 @@
 
 .flag__body {
 	width: 100%;
+}
+
+/* Extras: they shouldn't be here */
+
+.all-events-link {
+	margin-top: 1.5em;
 }
