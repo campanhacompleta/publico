@@ -455,8 +455,16 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    padding: 0.25em;
+    padding: 0.25em 0.35em;
     text-decoration: none; }
+    .main-navigation a:hover {
+      background: #aa2446;
+      color: #fff; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    background: #aa2446;
+    color: #fff; }
 
 /* Small menu. */
 .menu-toggle,

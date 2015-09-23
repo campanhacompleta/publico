@@ -57,13 +57,20 @@
 	}
 	a {
 		display: block;
-		padding: 0.25em;
+		padding: 0.25em 0.35em;
 		text-decoration: none;
+
+		&:hover {
+			background: $color__second;
+			color: #fff;
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		background: $color__second;
+		color: #fff;
 	}
 }
 
