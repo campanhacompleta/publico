@@ -781,6 +781,11 @@ a {
 .single .entry-image {
   margin-bottom: 1.5em; }
 
+/* Archives */
+.blog .entry-header,
+.archive .entry-header {
+  margin-bottom: 1.5em; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
