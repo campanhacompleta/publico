@@ -781,9 +781,10 @@ a {
 .single .entry-image {
   margin-bottom: 1.5em; }
 
-/* Archives */
+/* Archives, Blog Posts Page & Search */
 .blog .entry-header,
-.archive .entry-header {
+.archive .entry-header,
+.search .entry-header {
   margin-bottom: 1.5em; }
 
 /*--------------------------------------------------------------
