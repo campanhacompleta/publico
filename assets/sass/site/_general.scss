@@ -28,9 +28,10 @@
 
 /* Site News */
 .site-news__main {
-	.entry-title {
+	.entry-header {
 		background-color: $color__first;
-		margin: 0;
+		color: #fff; 
+		margin: 0 0 1.5em;
 		@include padding-main();
 
 		a {
@@ -108,7 +109,7 @@
 	display: table;
 	width: 100%;
 
-	.flag__img,
+	.flag__image,
 	.flag__body {
 		display: table-cell;
 		vertical-align: middle;
@@ -123,7 +124,7 @@
 
     img {
         display: block;
-        max-width: none;
+        max-width: 125px;
     }
 }
 
@@ -132,7 +133,16 @@
 }
 
 /* Extras: they shouldn't be here */
-
 .all-events-link {
 	margin-top: 1.5em;
+}
+
+.vcard { // TODO: stop rewriting Foundation
+	border: 0;
+	margin: 0;
+	padding: 0;
+
+	.fn {
+		@include font-size(1);
+	}
 }

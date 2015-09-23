@@ -662,15 +662,16 @@ a {
   margin-bottom: 0; }
 
 /* Site News */
-.site-news__main .entry-title {
+.site-news__main .entry-header {
   background-color: #302f5f;
-  margin: 0;
-  padding: 0.5em; }
-  .site-news__main .entry-title a {
+  color: #fff;
+  margin: 0 0 1.5em;
+  padding: 1.5em; }
+  .site-news__main .entry-header a {
     color: #fff; }
 
 .site-news__main .entry-content {
-  padding: 0.5em; }
+  padding: 1.5em; }
 
 .site-news__aside .hentry {
   background-color: #f2f2f2; }
@@ -716,7 +717,7 @@ a {
 .flag {
   display: table;
   width: 100%; }
-  .flag .flag__img,
+  .flag .flag__image,
   .flag .flag__body {
     display: table-cell;
     vertical-align: middle; }
@@ -727,7 +728,7 @@ a {
   padding-right: 10px; }
   .flag__image img {
     display: block;
-    max-width: none; }
+    max-width: 125px; }
 
 .flag__body {
   width: 100%; }
@@ -735,6 +736,14 @@ a {
 /* Extras: they shouldn't be here */
 .all-events-link {
   margin-top: 1.5em; }
+
+.vcard {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+  .vcard .fn {
+    font-size: 16px;
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 ## Posts and pages

@@ -33,15 +33,13 @@ get_header(); ?>
 							if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post(); ?>
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'hentry--columns clear' ); ?>>
-									<header class="entry-header">
-										<?php if ( has_post_thumbnail() ) : ?>
+									<?php if ( has_post_thumbnail() ) : ?>
 										<div class="entry-image">
 											<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'archive' ); ?></a>
 										</div><!-- .entry-image -->
 										<?php endif; ?>
-										
+									<header class="entry-header">
 										<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
 										<?php publico_posted_on(); ?>
 									</header><!-- .entry-header -->
 
@@ -57,7 +55,7 @@ get_header(); ?>
 						<div class="site-news__aside">
 							<?php
 							$noticias_aside = new WP_Query( array (
-								'posts_per_page' => 3,
+								'posts_per_page' => 4,
 								'ignore_sticky_posts' => true,
 								'tax_query' => array(
 							        array(
