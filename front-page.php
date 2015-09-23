@@ -17,7 +17,18 @@ get_header(); ?>
 					<div class="medium-7 columns">
 						<div class="site-news__main">
 							<?php
-							$noticias = new WP_Query( array ( 'posts_per_page' => 1, 'ignore_sticky_posts' => true ) );
+							$noticias = new WP_Query( array (
+								'posts_per_page' => 1,
+								'ignore_sticky_posts' => true,
+								'tax_query' => array(
+							        array(
+							            'taxonomy' => 'post_format',
+							            'field' => 'slug',
+							            'terms'    => array( 'post-format-video' ),
+										'operator' => 'NOT IN'
+							        )
+							    )
+							) );
 							
 							if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post(); ?>
 
@@ -39,15 +50,26 @@ get_header(); ?>
 									</div>
 								</article><!-- #post-## -->
 
-							<?php endwhile; endif; ?>
+							<?php endwhile; wp_reset_postdata(); endif; ?>
 						</div>
 					</div>
 					<div class="medium-5 columns">
 						<div class="site-news__aside">
 							<?php
-							$noticias = new WP_Query( array ( 'posts_per_page' => 3, 'ignore_sticky_posts' => true ) );
+							$noticias_aside = new WP_Query( array (
+								'posts_per_page' => 3,
+								'ignore_sticky_posts' => true,
+								'tax_query' => array(
+							        array(
+							            'taxonomy' => 'post_format',
+							            'field' => 'slug',
+							            'terms'    => array( 'post-format-video' ),
+										'operator' => 'NOT IN'
+							        )
+							    )
+							) );
 							
-							if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post(); ?>
+							if ( $noticias_aside->have_posts() ) : while ( $noticias_aside->have_posts() ) : $noticias_aside->the_post(); ?>
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'flag clearfix' ); ?>>
 									<div class="flag__image">
@@ -63,9 +85,12 @@ get_header(); ?>
 									</div>
 								</article><!-- #post-## -->
 
-							<?php endwhile; endif; ?>
-
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
 							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide">Ver outras notícias</a>
+							<?php endif; ?>
+
+							
 						</div>
 					</div>
 				</section>
