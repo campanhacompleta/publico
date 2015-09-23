@@ -124,6 +124,16 @@ function publico_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'Content Secondary', 'publico' ),
+		'id'            => 'sidebar-content-secondary',
+		'description'   => 'Appears only on Front Page',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s medium-6 columns">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title area__title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Content Bottom', 'publico' ),
 		'id'            => 'sidebar-content-bottom',
 		'description'   => '',

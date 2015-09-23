@@ -155,6 +155,8 @@ get_header(); ?>
 				</section>
 			</div>
 
+			<?php get_sidebar( 'content-secondary' ); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
