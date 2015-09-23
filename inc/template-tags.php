@@ -20,6 +20,10 @@ function publico_the_page_header() {
 
 	if ( is_singular() ) {
 		$page_header_content = '<h1 class="entry-title page-title">' . get_the_title( $post->ID ) . '</h1>';
+
+		if ( is_single() ) {
+			$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
+		}
 	}
 	elseif ( is_search() ) {
 		$page_header_content = '<h1 class="page-title">' . sprintf( esc_html__( 'Search Results for: %s', 'publico' ), '<span>' . get_search_query() ) . '</span></h1>';
@@ -39,11 +43,13 @@ function publico_the_page_header() {
 }
 endif;
 
-if ( ! function_exists( 'publico_posted_on' ) ) :
+if ( ! function_exists( 'publico_get_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function publico_posted_on() {
+function publico_get_posted_on() {
+	global $post;
+	
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -66,8 +72,17 @@ function publico_posted_on() {
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	return '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
+}
+endif;
+
+if ( ! function_exists( 'publico_posted_on' ) ) :
+/**
+ * Prints HTML with meta information for the current post-date/time and author.
+ */
+function publico_posted_on() {
+	echo publico_get_posted_on();
 }
 endif;
 
