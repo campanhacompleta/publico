@@ -79,6 +79,21 @@
 	width: 100%;
 }
 
+@media screen and (min-width: 40.0625em) {
+	.vertical-align--bottom {
+	    display: table;
+
+	    > .columns {
+	        display: table-cell;
+	        vertical-align: bottom;
+	    }
+
+	    > .columns, > [class*="column"] + [class*="column"]:last-child {
+	        float: none;
+	    }
+	}
+}
+
 /* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
 .flag {
 	display: table;

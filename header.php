@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'publico' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="row site__section">
+		<div class="row site__section vertical-align--bottom">
 			
 			<div class="medium-4 columns">
 				<div class="site-branding">
