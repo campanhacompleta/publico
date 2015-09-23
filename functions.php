@@ -76,6 +76,11 @@ function publico_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	/*
+	 * Enable support for page excerpts
+	 */
+	add_post_type_support( 'page', 'excerpt' );
 }
 endif; // publico_setup
 add_action( 'after_setup_theme', 'publico_setup' );

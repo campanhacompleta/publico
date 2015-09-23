@@ -24,6 +24,13 @@ function publico_the_page_header() {
 		if ( is_single() ) {
 			$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
 		}
+		elseif ( is_page() ) {
+			$excerpt = get_the_excerpt();
+
+			if ( $excerpt ) {
+				$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
+			}
+		}
 	}
 	elseif ( is_search() ) {
 		$page_header_content = '<h1 class="page-title">' . sprintf( esc_html__( 'Search Results for: %s', 'publico' ), '<span>' . get_search_query() ) . '</span></h1>';
