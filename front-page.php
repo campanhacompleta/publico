@@ -87,13 +87,12 @@ get_header(); ?>
 							<?php wp_reset_postdata(); ?>
 							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide">Ver outras notícias</a>
 							<?php endif; ?>
-
 							
 						</div>
 					</div>
 				</section>
 			</div>
-
+	
 			<?php get_sidebar( 'social-engagement' ); ?>
 
 			<?php get_sidebar( 'content-secondary' ); ?>
