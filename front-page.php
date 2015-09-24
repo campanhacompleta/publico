@@ -17,6 +17,8 @@ get_header(); ?>
 					<div class="medium-7 columns">
 						<div class="site-news__main">
 							<?php
+							$do_not_repeat = 0;
+
 							$noticias = new WP_Query( array (
 								'posts_per_page' => 1,
 								'ignore_sticky_posts' => true,
@@ -48,6 +50,8 @@ get_header(); ?>
 									</div>
 								</article><!-- #post-## -->
 
+								<?php $do_not_repeat = $post->ID; ?>
+
 							<?php endwhile; wp_reset_postdata(); endif; ?>
 						</div>
 					</div>
@@ -57,6 +61,7 @@ get_header(); ?>
 							$noticias_aside = new WP_Query( array (
 								'posts_per_page' => 4,
 								'ignore_sticky_posts' => true,
+								'post__not_in' => array( $do_not_repeat ),
 								'tax_query' => array(
 							        array(
 							            'taxonomy' => 'post_format',
