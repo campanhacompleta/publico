@@ -6,16 +6,16 @@ input[type="submit"],
 	border: 0;
 	background: $color__second;
 	color: #fff !important; //TODO: fix this
+	display: inline-block;
 	font-family: $font__main;
+	font-weight: bold;
 	line-height: 1;
 	text-transform: lowercase;
 
-	&:hover {
-		background: $color__first;
-	}
-
+	&:hover,
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		background: $color__first;
+		color: #fff;
 	}
 }

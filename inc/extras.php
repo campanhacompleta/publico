@@ -92,3 +92,15 @@ function publico_add_widget_custom_classes() {
     }
 }
 add_action( 'init', 'publico_add_widget_custom_classes' );
+
+/**
+ * Add Foundation classes to edit post link
+ * 
+ * @param $output The old class
+ * @return $output The new classes
+ */
+function publico_add_edit_post_link_classes( $output ) {
+    $output = str_replace( 'class="post-edit-link"', 'class="post-edit-link button small"', $output  );
+    return $output;
+}
+add_filter( 'edit_post_link', 'publico_add_edit_post_link_classes' );
