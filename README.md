@@ -5,7 +5,11 @@ A WordPress theme for transparent and democratic political parties
 
 ## Personalização do tema
 ### Menus
-Temos, por enquanto, apenas um espaço para menus no topo. A visualização dos itens filhos (para que o menu funcione como um dropdown) ainda não está disponível. Ver [issue #13](https://github.com/campanhacompleta/publico/issues/13)
+Há duas áreas de menus no tema: a do cabeçalho, responsável pela navegação geral do site, e a do rodapé, específica para o uso de redes sociais.
+
+Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais). O tema se encarregará de trocar os títulos dos links sociais por ícones.
+
+Importante: a visualização dos itens filhos no cabeçalho (para que o menu funcione como um dropdown) ainda não está disponível. Ver [issue #13](https://github.com/campanhacompleta/publico/issues/13)
 
 ### Posts e destaques na capa
 São mostrados 5 posts na capa, com um link para o arquivo. É possível escolher o destaque principal ao marcar um post como *fixo*. Caso nenhum post seja marcado como *fixo*, a área principal mostrará o último post criado.

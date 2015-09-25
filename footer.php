@@ -37,12 +37,19 @@
 				    	</div>
 				    </div>
 				    <div class="medium-6 columns">
-				    	<div class="site-social medium-text-right">
-				    		<a href="#">Facebook</a>
-				    		<a href="#">Twitter</a>
-				    		<a href="#">Instagram</a>
-				    		<a href="#">RSS</a>
-				    	</div>
+				    	<?php if ( has_nav_menu( 'social' ) ) : ?>
+							<nav class="site-social social-navigation medium-text-right" role="navigation" aria-label='<?php _e( 'Footer Social Links Menu', 'publico' ); ?>'>
+								<?php
+									wp_nav_menu( array(
+										'theme_location' => 'social',
+										'menu_class'     => 'social-links-menu inline-list  medium-text-right',
+										'depth'          => 1,
+										//'link_before'    => '<span class="screen-reader-text">',
+										//'link_after'     => '</span>',
+									) );
+								?>
+							</nav><!-- .social-navigation -->
+						<?php endif; ?>
 				    </div>
 	    		</div>
     		</div>
