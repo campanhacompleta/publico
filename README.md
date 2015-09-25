@@ -7,6 +7,9 @@ A WordPress theme for transparent and democratic political parties
 ### Menus
 Temos, por enquanto, apenas um espaço para menus no topo. A visualização dos itens filhos (para que o menu funcione como um dropdown) ainda não está disponível. Ver [issue #13](https://github.com/campanhacompleta/publico/issues/13)
 
+### Posts e destaques na capa
+São mostrados 5 posts na capa, com um link para o arquivo. É possível escolher o destaque principal ao marcar um post como *fixo*. Caso nenhum post seja marcado como *fixo*, a área principal mostrará o último post criado.
+
 ### Áreas de Widgets
 O tema possui 4 áreas distintas para widgets. Elas são:
 

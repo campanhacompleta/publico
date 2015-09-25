@@ -22,6 +22,7 @@ get_header(); ?>
 							$noticias = new WP_Query( array (
 								'posts_per_page' => 1,
 								'ignore_sticky_posts' => true,
+								'post__in' => get_option( 'sticky_posts' ),
 								'tax_query' => array(
 							        array(
 							            'taxonomy' => 'post_format',
