@@ -170,6 +170,9 @@ function publico_scripts() {
 	// Google Fonts
 	wp_enqueue_style( 'publico-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic', array(), null );
 
+	// Font Awesome CDN
+	wp_enqueue_style( 'publico-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
+
 	// Main theme style
 	wp_register_style( 'publico-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'publico-style-main');
