@@ -44,8 +44,8 @@
 										'theme_location' => 'social',
 										'menu_class'     => 'social-links-menu inline-list  medium-text-right',
 										'depth'          => 1,
-										//'link_before'    => '<span class="screen-reader-text">',
-										//'link_after'     => '</span>',
+										'link_before'    => '<span class="screen-reader-text">',
+										'link_after'     => '</span>',
 									) );
 								?>
 							</nav><!-- .social-navigation -->
