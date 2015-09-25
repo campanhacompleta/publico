@@ -7,7 +7,23 @@ A WordPress theme for transparent and democratic political parties
 ### Menus
 Há duas áreas de menus no tema: a do cabeçalho, responsável pela navegação geral do site, e a do rodapé, específica para o uso de redes sociais.
 
-Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais). O tema se encarregará de trocar os títulos dos links sociais por ícones.
+Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais). O tema se encarregará de trocar os títulos dos links sociais por ícones. No momento, os ícones suportados são os seguintes:
+
+* Twitter
+* Facebook
+* Google+
+* Flickr
+* Instagram
+* GitHub
+* LinkedIn
+* Pinterest
+* Tumblr
+* Vimeo
+* Twitter
+* WordPress
+* YouTube
+* Email (através do endereço `mailto:email@dominio.com`)
+* Feed (usando especificamente `/feed/` na URL)
 
 Importante: a visualização dos itens filhos no cabeçalho (para que o menu funcione como um dropdown) ainda não está disponível. Ver [issue #13](https://github.com/campanhacompleta/publico/issues/13)
 
