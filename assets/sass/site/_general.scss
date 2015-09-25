@@ -72,11 +72,15 @@
 
 	.site-info {
 		background-color: $color__second;
-		@include font-size(0.875);
+
+		.site-credits {
+			@include font-size(0.875);
+		}
 	}
 
 	a {
 		color: #fff;
+		margin-bottom: 0.125em;
 
 		&:hover {
 			color: $color__third;

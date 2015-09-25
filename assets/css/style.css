@@ -511,13 +511,19 @@ a {
   width: 50%; }
 
 /* Social Links Menu */
-.social-navigation a {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 2em;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+.social-navigation {
+  margin-top: 1.5em; }
+  .social-navigation a {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 32px;
+    font-size: 2rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  @media screen and (min-width: 40.0625em) {
+    .social-navigation {
+      margin-top: 0; } }
 
 .social-navigation a[href*="facebook.com"]:before {
   content: "\f09a"; }
@@ -746,11 +752,13 @@ a {
   background-color: #302f5f;
   color: #fff; }
   .site-footer .site-info {
-    background-color: #aa2446;
-    font-size: 14px;
-    font-size: 0.875rem; }
+    background-color: #aa2446; }
+    .site-footer .site-info .site-credits {
+      font-size: 14px;
+      font-size: 0.875rem; }
   .site-footer a {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 0.125em; }
     .site-footer a:hover {
       color: #f2f2f2; }
 

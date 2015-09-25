@@ -130,13 +130,19 @@
 
 /* Social Links Menu */
 .social-navigation {
+	margin-top: 1.5em;
+
 	a {
 		display: inline-block;
 		font: normal normal normal 14px/1 FontAwesome;
-		font-size: 2em;
+		@include font-size(2);
 		text-rendering: auto;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+	}
+
+	@media screen and (min-width: 40.0625em) {
+		margin-top: 0;
 	}
 }
 

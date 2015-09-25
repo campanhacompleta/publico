@@ -31,12 +31,12 @@
 		<div class="site-info site__section">
 			<div class="row">
 				<div class="medium-12 columns">
-		    		<div class="medium-6 columns">
+		    		<div class="medium-8 columns">
 		    			<div class="site-credits">
 		    				<?php echo get_theme_mod( 'publico_footer_text' ); ?>
 				    	</div>
 				    </div>
-				    <div class="medium-6 columns">
+				    <div class="medium-4 columns">
 				    	<?php if ( has_nav_menu( 'social' ) ) : ?>
 							<nav class="site-social social-navigation medium-text-right" role="navigation" aria-label='<?php _e( 'Footer Social Links Menu', 'publico' ); ?>'>
 								<?php
