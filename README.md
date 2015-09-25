@@ -7,7 +7,7 @@ A WordPress theme for transparent and democratic political parties
 ### Menus
 Há duas áreas de menus no tema: a do cabeçalho, responsável pela navegação geral do site, e a do rodapé, específica para o uso de redes sociais.
 
-Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais). O tema se encarregará de trocar os títulos dos links sociais por ícones. No momento, os ícones suportados são os seguintes:
+Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais), para inserir uma rede, basta inserir o linque da rede na área "links" e adicionar ao menu, colocar qual rede é no rótulo ajuda a gestão. O tema se encarregará de trocar os títulos dos links sociais por ícones. No momento, os ícones suportados são os seguintes:
 
 * Twitter
 * Facebook
