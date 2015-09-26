@@ -35,8 +35,12 @@
 
 	@include link-color--reverse();
 
-	.widget-title {
-		color: #fff;
+	.widget {
+		border-left: 3px solid $color__second;
+
+		.widget-title {
+			color: #fff;
+		}
 	}
 }
 
