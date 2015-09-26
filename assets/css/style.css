@@ -711,6 +711,9 @@ a {
   font-style: italic;
   margin-bottom: 0; }
 
+.site-header .header-image {
+  text-align: center; }
+
 /* Site News */
 .site-news__main .entry-header {
   background-color: #302f5f;

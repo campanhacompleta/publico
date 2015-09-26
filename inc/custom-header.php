@@ -26,8 +26,8 @@ function publico_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'publico_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1600,
-		'height'                 => 300,
+		'width'                  => 1920,
+		'height'                 => 360,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'publico_header_style',
 		'admin-head-callback'    => 'publico_admin_header_style',
