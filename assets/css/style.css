@@ -459,7 +459,8 @@ a {
   display: block; }
 
 .menu-toggle {
-  margin: 1.5em auto; }
+  margin: 1.5em auto;
+  text-transform: uppercase !important; }
 
 @media screen and (min-width: 40.0625em) {
   .menu-toggle {

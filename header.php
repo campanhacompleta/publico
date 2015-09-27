@@ -48,7 +48,7 @@
 			</div>
 			<div class="medium-8 columns">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'publico' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i>&nbsp;<?php esc_html_e( 'Menu', 'publico' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'depth' => 0 ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div>
