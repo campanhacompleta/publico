@@ -2,7 +2,6 @@
 	clear: both;
 	display: block;
 	margin: 0 auto;
-	text-align: center;
 	width: 100%;
 
 	ul {
@@ -12,52 +11,18 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
+			margin: 0 0 0 1.5em;
 		}
 	}
+
 	li {
 		position: relative;
-		&:hover > a,
-		&.focus > a {
-		}
+		border-top: 2px solid $color__third;
 	}
+
 	a {
 		display: block;
-		padding: 0.25em 0.35em;
+		padding: 0.5em;
 		text-decoration: none;
 
 		&:hover {
@@ -78,7 +43,6 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-	margin: 0 auto;
 }
 
 .menu-toggle {
@@ -92,12 +56,50 @@
 
 	.main-navigation {
 		text-align: left;
+
 		ul {
 			display: block;
+
+			ul {
+				background: $color__third;
+				float: left;
+				margin: 0;
+				position: absolute;
+				top: 2.5em;
+				left: -999em;
+				z-index: 99999;
+
+				ul {
+					left: -999em;
+					top: 0;
+				}
+
+				li {
+					&:hover > ul,
+					&.focus > ul {
+						left: 100%;
+					}
+				}
+
+				a {
+					width: 200px;
+				}
+			}
+			li:hover > ul,
+			li.focus > ul {
+				left: auto;
+			}
 		}
 
 		li {
+			border: 0;
 			display: inline-block;
+
+			&:hover > a,
+			&.focus > a {
+				background: $color__second;
+				color: #fff;
+			}
 		}
 
 		a {

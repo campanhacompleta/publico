@@ -429,7 +429,6 @@ a {
   clear: both;
   display: block;
   margin: 0 auto;
-  text-align: center;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -437,28 +436,13 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
+      margin: 0 0 0 1.5em; }
   .main-navigation li {
-    position: relative; }
+    position: relative;
+    border-top: 2px solid #f2f2f2; }
   .main-navigation a {
     display: block;
-    padding: 0.25em 0.35em;
+    padding: 0.5em;
     text-decoration: none; }
     .main-navigation a:hover {
       background: #aa2446;
@@ -472,8 +456,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
-  margin: 0 auto; }
+  display: block; }
 
 .menu-toggle {
   margin: 1.5em auto; }
@@ -485,8 +468,32 @@ a {
     text-align: left; }
     .main-navigation ul {
       display: block; }
+      .main-navigation ul ul {
+        background: #f2f2f2;
+        float: left;
+        margin: 0;
+        position: absolute;
+        top: 2.5em;
+        left: -999em;
+        z-index: 99999; }
+        .main-navigation ul ul ul {
+          left: -999em;
+          top: 0; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
+        .main-navigation ul ul a {
+          width: 200px; }
+      .main-navigation ul li:hover > ul,
+      .main-navigation ul li.focus > ul {
+        left: auto; }
     .main-navigation li {
+      border: 0;
       display: inline-block; }
+      .main-navigation li:hover > a,
+      .main-navigation li.focus > a {
+        background: #aa2446;
+        color: #fff; }
     .main-navigation a {
       display: inline-block;
       text-decoration: none; } }
