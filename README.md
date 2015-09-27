@@ -25,8 +25,6 @@ Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele par
 * Email (através do endereço `mailto:email@dominio.com`)
 * Feed (usando especificamente `/feed/` na URL)
 
-Importante: a visualização dos itens filhos no cabeçalho (para que o menu funcione como um dropdown) ainda não está disponível. Ver [issue #13](https://github.com/campanhacompleta/publico/issues/13)
-
 ### Posts e destaques na capa
 São mostrados 5 posts na capa, com um link para o arquivo. É possível escolher o destaque principal ao marcar um post como *fixo*. Caso nenhum post seja marcado como *fixo*, a área principal mostrará o último post criado.
 
