@@ -37,6 +37,25 @@
 		background: $color__second;
 		color: #fff;
 	}
+
+	.menu-item-has-children > a {
+
+		padding-right: 1.85em;
+
+		&:after {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			@include font-size(1.125);
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			content: "\f107";
+
+			position: absolute;
+			right: 0.5em;
+			top: 0.65em;
+		}
+	}
 }
 
 /* Small menu. */
