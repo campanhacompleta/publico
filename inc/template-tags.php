@@ -21,7 +21,7 @@ function publico_the_page_header() {
 	if ( is_singular() ) {
 		$page_header_content = '<h1 class="entry-title page-title">' . get_the_title( $post->ID ) . '</h1>';
 
-		if ( is_single() ) {
+		if ( is_single() && 'post' == get_post_type() ) {
 			$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
 		}
 		elseif ( is_page() ) {
