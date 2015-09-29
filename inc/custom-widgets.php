@@ -95,7 +95,7 @@ class Publico_Widget_Video extends WP_Widget {
 			<article id="post-<?php the_ID(); ?>">
 				<header class="entry-header">
 					<div class="entry-video">
-						<?php publico_the_first_embed( $post->ID ); ?>
+						<?php publico_the_first_embed( get_the_ID() ); ?>
 					</div>
 				</header><!-- .entry-header -->
 		<?php endwhile; ?>
