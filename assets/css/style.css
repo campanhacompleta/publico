@@ -966,3 +966,24 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# External plugins
+--------------------------------------------------------------*/
+.parlamentar__social-links {
+  display: table;
+  width: 100%;
+  margin-bottom: 3em; }
+  .parlamentar__social-links li {
+    display: table-cell;
+    width: 25%; }
+  .parlamentar__social-links a {
+    background-color: #aa2446;
+    color: #fff;
+    display: block;
+    margin-right: 0.125em;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: lowercase; }
+    .parlamentar__social-links a:hover {
+      background-color: #302f5f; }

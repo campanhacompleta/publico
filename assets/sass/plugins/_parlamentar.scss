@@ -1,0 +1,25 @@
+.parlamentar__social-links {
+	display: table;
+	width: 100%;
+
+	li {
+		display: table-cell;
+		width: 25%;
+	}
+
+	a {
+		background-color: $color__second;
+		color: #fff;
+		display: block;
+		margin-right: 0.125em;
+		padding: 0.5em;
+		text-align: center;
+		text-transform: lowercase;
+
+		&:hover {
+			background-color: $color__first;
+		}
+	}
+
+	margin-bottom: 3em;
+}
