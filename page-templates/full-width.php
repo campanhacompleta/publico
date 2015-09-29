@@ -1,11 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * Template Name: Full Width Page
+ * 
+ * A page template that has no sidebar
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,7 +11,7 @@
 
 get_header(); ?>
 
-	<div class="medium-8 columns">
+	<div class="large-12 columns">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main site__section" role="main">
 
@@ -28,5 +25,4 @@ get_header(); ?>
 		</div><!-- #primary -->
 	</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
