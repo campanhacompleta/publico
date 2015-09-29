@@ -23,3 +23,12 @@
 
 	margin-bottom: 3em;
 }
+
+.parlamentar__info .entry-title {
+	background-color: $color__third;
+	font-size: 1em;
+
+	@media screen and (min-width: 37.50em) {
+		font-size: 1.125em;
+	}
+}

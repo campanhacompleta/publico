@@ -987,3 +987,10 @@ object {
     text-transform: lowercase; }
     .parlamentar__social-links a:hover {
       background-color: #302f5f; }
+
+.parlamentar__info .entry-title {
+  background-color: #f2f2f2;
+  font-size: 1em; }
+  @media screen and (min-width: 37.5em) {
+    .parlamentar__info .entry-title {
+      font-size: 1.125em; } }
