@@ -18,47 +18,53 @@ function publico_the_page_header() {
 		return;
 	}
 
-	if ( is_singular() ) {
-		$page_header_content = '<h1 class="entry-title page-title">' . get_the_title( $post->ID ) . '</h1>';
+	if ( have_posts() ) :
 
-		if ( is_single() && 'post' == get_post_type() ) {
-			$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
+		if ( is_singular() ) {
+			while ( have_posts() ) : the_post();
+				$page_header_content = '<h1 class="entry-title page-title">' . get_the_title( $post->ID ) . '</h1>';
+
+				if ( is_single() && 'post' == get_post_type() ) {
+					$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
+				}
+				elseif ( is_page() ) {
+					$excerpt = get_the_excerpt();
+
+					if ( $excerpt ) {
+						$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
+					}
+				}
+			endwhile;
 		}
-		elseif ( is_page() ) {
-			$excerpt = get_the_excerpt();
-
-			if ( $excerpt ) {
-				$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
-			}
-		}
-	}
-	elseif ( is_search() ) {
-		$page_header_content = '<h1 class="page-title">' . sprintf( esc_html__( 'Search Results for: %s', 'publico' ), '<span>' . get_search_query() ) . '</span></h1>';
-	}
-	else {
-
-		if ( is_home() && get_option('page_for_posts') ) {
-			$page_header_content = '<h1 class="entry-title page-title">' . get_page( get_option( 'page_for_posts' ) )->post_title . '</h1>';
-
-			$excerpt = get_page( get_option( 'page_for_posts' ) )->post_excerpt;
-
-			if ( $excerpt ) {
-				$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
-			}
+		elseif ( is_search() ) {
+			$page_header_content = '<h1 class="page-title">' . sprintf( esc_html__( 'Search Results for: %s', 'publico' ), '<span>' . get_search_query() ) . '</span></h1>';
 		}
 		else {
-			$page_header_content = '<h1 class="page-title">' . get_the_archive_title() . '</h1>';
-			$description = get_the_archive_description();
 
-		    if ( $description ) {
-		        $page_header_content .= '<div class="page-description taxonomy-description">' . $description . '</div>';
-		    }
-		   }
-	}
-	
-	echo '<header class="page-header site__section" aria-hidden="true"><div class="row"><div class="large-12 columns">';
-	echo $page_header_content;
-	echo '</div></div></header><!-- .page-header -->';
+			if ( is_home() && get_option('page_for_posts') ) {
+				$page_header_content = '<h1 class="entry-title page-title">' . get_page( get_option( 'page_for_posts' ) )->post_title . '</h1>';
+
+				$excerpt = get_page( get_option( 'page_for_posts' ) )->post_excerpt;
+
+				if ( $excerpt ) {
+					$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
+				}
+			}
+			else {
+				$page_header_content = '<h1 class="page-title">' . get_the_archive_title() . '</h1>';
+				$description = get_the_archive_description();
+
+			    if ( $description ) {
+			        $page_header_content .= '<div class="page-description taxonomy-description">' . $description . '</div>';
+			    }
+			}
+		}
+
+		echo '<header class="page-header site__section" aria-hidden="true"><div class="row"><div class="large-12 columns">';
+		echo $page_header_content;
+		echo '</div></div></header><!-- .page-header -->';
+
+	endif;
 }
 endif;
 
