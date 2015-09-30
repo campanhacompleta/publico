@@ -85,25 +85,28 @@ class Publico_Widget_Video extends WP_Widget {
 			)
 		) );
 
-		if ($video->have_posts()) :
-?>
-		<?php echo $args['before_widget']; ?>
-		<?php if ( $title ) {
-			echo $args['before_title'] . $title . $args['after_title'];
-		} ?>
-		<?php while ( $video->have_posts() ) : $video->the_post(); ?>
-			<article id="post-<?php the_ID(); ?>">
-				<header class="entry-header">
-					<div class="entry-video">
-						<?php publico_the_first_embed( get_the_ID() ); ?>
-					</div>
-				</header><!-- .entry-header -->
-		<?php endwhile; ?>
-		<?php echo '<a href="' . get_post_format_link( 'video' ) . '" class="button">' . __( 'Veja outros vídeos', 'publico' ) . '</a>'; ?>
-		<?php echo $args['after_widget']; ?>
-<?php
-		// Reset the global $the_post as this query will have stomped on it
-		wp_reset_postdata();
+		if ( $video->have_posts()) :
+			echo $args['before_widget'];
+
+			if ( $title ) {
+				echo $args['before_title'] . $title . $args['after_title'];
+			}
+
+			while ( $video->have_posts() ) : $video->the_post(); ?>
+				<article id="post-<?php the_ID(); ?>">
+					<header class="entry-header">
+						<div class="entry-video">
+							<?php publico_the_first_embed( get_the_ID() ); ?>
+						</div>
+					</header><!-- .entry-header -->
+			<?php
+			endwhile;
+			echo '<a href="' . get_post_format_link( 'video' ) . '" class="button">' . __( 'Veja outros vídeos', 'publico' ) . '</a>';
+
+			echo $args['after_widget'];
+
+			// Reset the global $the_post as this query will have stomped on it
+			wp_reset_postdata();
 
 		endif;
 
