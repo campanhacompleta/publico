@@ -99,6 +99,7 @@ class Publico_Widget_Video extends WP_Widget {
 					</div>
 				</header><!-- .entry-header -->
 		<?php endwhile; ?>
+		<?php echo '<a href="' . get_post_format_link( 'video' ) . '" class="button">' . __( 'Veja outros vídeos', 'publico' ) . '</a>'; ?>
 		<?php echo $args['after_widget']; ?>
 <?php
 		// Reset the global $the_post as this query will have stomped on it
