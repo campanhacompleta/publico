@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row site__section vertical-align--bottom">
 			
-			<div class="medium-4 columns">
+			<div class="medium-3 columns">
 				<div class="site-branding">
 					<?php
 					    $logo = get_theme_mod( 'publico_logo' );
@@ -46,7 +46,7 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 			</div>
-			<div class="medium-8 columns">
+			<div class="medium-9 columns">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i>&nbsp;<?php esc_html_e( 'Menu', 'publico' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'depth' => 0 ) ); ?>

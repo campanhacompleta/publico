@@ -1,6 +1,7 @@
 .main-navigation {
 	clear: both;
 	display: block;
+	@include font-size(0.875);
 	margin: 0 auto;
 	width: 100%;
 
