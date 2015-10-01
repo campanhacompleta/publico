@@ -674,11 +674,18 @@ a {
   .widget p:last-child {
     margin-bottom: 0; }
 
+/* Main Widget Area */
 .widget-area--main .widget {
   background-color: #f2f2f2;
   padding: 1.5em; }
   .widget-area--main .widget .widget-title {
     color: #302f5f; }
+  .widget-area--main .widget button,
+  .widget-area--main .widget input[type="button"],
+  .widget-area--main .widget input[type="reset"],
+  .widget-area--main .widget input[type="submit"],
+  .widget-area--main .widget .button {
+    width: 100%; }
 
 /* Social Engagement Area */
 .widget-area--social-engagement {
