@@ -177,8 +177,11 @@ function publico_scripts() {
 	wp_register_style( 'publico-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'publico-style-main');
 
+	// FitVids.js
+	wp_enqueue_script( 'publico-fitvids', get_template_directory_uri() . '/assets/js/jquery.fitvids.js', array( 'jquery' ), '', true );
+
 	// Main JS
-	wp_enqueue_script( 'publico-foundation', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
+	wp_enqueue_script( 'publico-main-scripts', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
 
 	wp_enqueue_script( 'publico-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
