@@ -1,3 +1,18 @@
+.single-parlamentar {
+	.site-main {
+		a {
+			color: $color__second;
+
+			&:hover {
+				color: $color__first;
+			}
+		}
+	}
+}
+.parlamentar__area-title {
+	color: $color__first;
+}
+
 .parlamentar__social-links {
 	display: table;
 	width: 100%;
@@ -9,7 +24,7 @@
 
 	a {
 		background-color: $color__second;
-		color: #fff;
+		color: #fff !important;
 		display: block;
 		margin-right: 0.125em;
 		padding: 0.5em;
@@ -18,6 +33,7 @@
 
 		&:hover {
 			background-color: $color__first;
+			color: #fff;
 		}
 	}
 
@@ -31,4 +47,10 @@
 	@media screen and (min-width: 37.50em) {
 		font-size: 1.125em;
 	}
+}
+
+.parlamentar__transparency {
+	background-color: $color__third;
+	@include font-size(0.875);
+	padding: 1.5rem;
 }

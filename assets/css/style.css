@@ -984,6 +984,14 @@ object {
 /*--------------------------------------------------------------
 # External plugins
 --------------------------------------------------------------*/
+.single-parlamentar .site-main a {
+  color: #aa2446; }
+  .single-parlamentar .site-main a:hover {
+    color: #302f5f; }
+
+.parlamentar__area-title {
+  color: #302f5f; }
+
 .parlamentar__social-links {
   display: table;
   width: 100%;
@@ -993,14 +1001,15 @@ object {
     width: 25%; }
   .parlamentar__social-links a {
     background-color: #aa2446;
-    color: #fff;
+    color: #fff !important;
     display: block;
     margin-right: 0.125em;
     padding: 0.5em;
     text-align: center;
     text-transform: lowercase; }
     .parlamentar__social-links a:hover {
-      background-color: #302f5f; }
+      background-color: #302f5f;
+      color: #fff; }
 
 .parlamentar__info .entry-title {
   background-color: #f2f2f2;
@@ -1008,3 +1017,9 @@ object {
   @media screen and (min-width: 37.5em) {
     .parlamentar__info .entry-title {
       font-size: 1.125em; } }
+
+.parlamentar__transparency {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 1.5rem; }
