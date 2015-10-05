@@ -25,15 +25,15 @@ get_header(); ?>
 
 					<div class="entry-content">
 						<div class="row">
-							<div class="medium-6 columns">
-								<?php do_action( 'parlamentar_the_top_info' ); ?>
-							</div>
-							<div class="medium-6 columns">
+							<div class="medium-6 medium-push-6 columns">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div class="entry-image">
 										<?php the_post_thumbnail(); ?>
 									</div><!-- .entry-image -->
 								<?php endif; ?>
+							</div>
+							<div class="medium-6 medium-pull-6 columns">
+								<?php do_action( 'parlamentar_the_top_info' ); ?>
 							</div>
 						</div>
 
