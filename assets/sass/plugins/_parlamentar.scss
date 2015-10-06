@@ -14,6 +14,8 @@
 	color: $color__first;
 
 	&:before {
+		background-color: $color__first;
+		color: #fff;
 		display: inline-block;
 		font-family: FontAwesome;
 		font-size: inherit;
@@ -21,9 +23,14 @@
 		font-variant: normal;
 		font-weight: normal;
 		text-rendering: auto;
+		height: 1.5em;
+		line-height: 1.5;
+		margin-right: 0.5em;
+		text-align: center;
+		width: 1.5em;
+
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		margin-right: 0.5em;
 	}
 
 	&--biography:before {

@@ -995,6 +995,8 @@ object {
 .parlamentar__area-title {
   color: #302f5f; }
   .parlamentar__area-title:before {
+    background-color: #302f5f;
+    color: #fff;
     display: inline-block;
     font-family: FontAwesome;
     font-size: inherit;
@@ -1002,9 +1004,13 @@ object {
     font-variant: normal;
     font-weight: normal;
     text-rendering: auto;
+    height: 1.5em;
+    line-height: 1.5;
+    margin-right: 0.5em;
+    text-align: center;
+    width: 1.5em;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 0.5em; }
+    -moz-osx-font-smoothing: grayscale; }
   .parlamentar__area-title--biography:before {
     content: "\f007"; }
   .parlamentar__area-title--transparency:before {
