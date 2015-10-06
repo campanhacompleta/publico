@@ -991,6 +991,23 @@ object {
 
 .parlamentar__area-title {
   color: #302f5f; }
+  .parlamentar__area-title:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: inherit;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 0.5em; }
+  .parlamentar__area-title--biography:before {
+    content: "\f007"; }
+  .parlamentar__area-title--transparency:before {
+    content: "\f07c"; }
+  .parlamentar__area-title--term-cabinet:before {
+    content: "\f0c0"; }
 
 .parlamentar__social-links {
   display: table;

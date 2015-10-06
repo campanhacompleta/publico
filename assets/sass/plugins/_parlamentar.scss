@@ -9,8 +9,34 @@
 		}
 	}
 }
+
 .parlamentar__area-title {
 	color: $color__first;
+
+	&:before {
+		display: inline-block;
+		font-family: FontAwesome;
+		font-size: inherit;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		margin-right: 0.5em;
+	}
+
+	&--biography:before {
+		content: "\f007";
+	}
+
+	&--transparency:before {
+		content: "\f07c";
+	}
+
+	&--term-cabinet:before {
+		content: "\f0c0";
+	}
 }
 
 .parlamentar__social-links {
