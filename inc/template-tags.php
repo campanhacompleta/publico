@@ -28,10 +28,8 @@ function publico_the_page_header() {
 					$page_header_content .= '<div class="entry-meta">' . publico_get_posted_on() . '</div><!-- .entry-meta -->';
 				}
 				elseif ( is_page() ) {
-					$excerpt = get_the_excerpt();
-
-					if ( $excerpt ) {
-						$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
+					if ( has_excerpt() ) {
+						$page_header_content .= '<div class="page-description taxonomy-description">' . get_the_excerpt() . '</div>';
 					}
 				}
 			endwhile;
@@ -41,12 +39,12 @@ function publico_the_page_header() {
 		}
 		else {
 
-			if ( is_home() && get_option('page_for_posts') ) {
+			if ( is_home() && get_option( 'page_for_posts' ) ) {
 				$page_header_content = '<h1 class="entry-title page-title">' . get_page( get_option( 'page_for_posts' ) )->post_title . '</h1>';
 
 				$excerpt = get_page( get_option( 'page_for_posts' ) )->post_excerpt;
 
-				if ( $excerpt ) {
+				if ( ! empty( $excerpt ) ) {
 					$page_header_content .= '<div class="page-description taxonomy-description">' . $excerpt . '</div>';
 				}
 			}
