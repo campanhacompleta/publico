@@ -1,6 +1,70 @@
-.comment-content a {
-	word-wrap: break-word;
+.comments-title,
+.comment-reply-title {
+	border-top: 3px solid $color__first;
+	font-size: 1.5rem;
+	margin: 0;
+	padding-top: 1.5rem;
 }
-.bypostauthor {
-	display: block;
+
+.comment-list {
+	list-style-type: none;
+	margin-left: 0;
+
+	.children {
+		list-style-type: none;
+	}
+
+	.comment-meta {
+		background-color: $color__third;
+		margin-bottom: 1.5rem;
+
+		.comment-metadata {
+			@include font-size(0.875); 
+		}
+
+		.time-link {
+
+		}
+	}
+
+	.comment-author {
+		.avatar {
+
+		}
+	}
+
+	.comment-body {
+		background: #fff;
+		border-top: 2px solid $color__third;
+		padding: 1em 0;
+	}
+
+	.comment-content a {
+		word-wrap: break-word;
+	}
+
+	.bypostauthor {
+		display: block;
+	}
+}
+
+.comment-respond {
+	.comment-reply-title {
+		position: relative;
+
+		#cancel-comment-reply-link {
+			@include font-size(0.875);
+			position: absolute;
+			bottom: 0;
+			line-height: 1;
+			right: 0;
+		}
+	}
+}
+
+.comment-form {
+	.logged-in-as {
+		@include font-size(0.875);
+		font-style: italic;
+	}
 }

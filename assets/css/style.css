@@ -902,11 +902,47 @@ a {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word; }
+.comments-title,
+.comment-reply-title {
+  border-top: 3px solid #302f5f;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 1.5rem; }
 
-.bypostauthor {
-  display: block; }
+.comment-list {
+  list-style-type: none;
+  margin-left: 0; }
+  .comment-list .children {
+    list-style-type: none; }
+  .comment-list .comment-meta {
+    background-color: #f2f2f2;
+    margin-bottom: 1.5rem; }
+    .comment-list .comment-meta .comment-metadata {
+      font-size: 14px;
+      font-size: 0.875rem; }
+  .comment-list .comment-body {
+    background: #fff;
+    border-top: 2px solid #f2f2f2;
+    padding: 1em 0; }
+  .comment-list .comment-content a {
+    word-wrap: break-word; }
+  .comment-list .bypostauthor {
+    display: block; }
+
+.comment-respond .comment-reply-title {
+  position: relative; }
+  .comment-respond .comment-reply-title #cancel-comment-reply-link {
+    font-size: 14px;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+    right: 0; }
+
+.comment-form .logged-in-as {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
