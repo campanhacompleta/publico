@@ -30,11 +30,24 @@
 @mixin link-color--reverse() {
 	a {
 		color: #fff;
-		
+
 		&:hover,
 		&:focus,
 		&:active {
 			color: $color__link-hover;
 		}
 	}
+}
+
+// Messages & Alerts
+%message {
+	@include font-size(0.875);
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+@mixin message($color) {
+	@extend %message;
+	color: $color;
+	background: lighten($color, 45%);
 }

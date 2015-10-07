@@ -1,0 +1,16 @@
+// Messages
+.message-error {
+  @include message($color__error);
+}
+
+.message-success {
+  @include message($color__success);
+}
+
+.message-warning {
+  @include message($color__warning);
+}
+
+.message-info {
+  @include message($color__info);
+}
