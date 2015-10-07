@@ -49,21 +49,23 @@
 
 .comment-respond {
 	.comment-reply-title {
-		position: relative;
+		margin-bottom: 1.5rem;
 
 		#cancel-comment-reply-link {
 			@include font-size(0.875);
-			position: absolute;
-			bottom: 0;
-			line-height: 1;
-			right: 0;
 		}
 	}
-}
 
-.comment-form {
 	.logged-in-as {
 		@include font-size(0.875);
 		font-style: italic;
+	}
+
+	.comment-notes {
+		@include message($color__info);
+
+		#email-notes {
+			display: block;
+		}
 	}
 }

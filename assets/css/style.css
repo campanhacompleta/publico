@@ -43,6 +43,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+.comment-respond .comment-notes, .message-error, .message-success, .message-warning, .message-info {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -931,19 +937,40 @@ a {
     display: block; }
 
 .comment-respond .comment-reply-title {
-  position: relative; }
+  margin-bottom: 1.5rem; }
   .comment-respond .comment-reply-title #cancel-comment-reply-link {
     font-size: 14px;
-    font-size: 0.875rem;
-    position: absolute;
-    bottom: 0;
-    line-height: 1;
-    right: 0; }
+    font-size: 0.875rem; }
 
-.comment-form .logged-in-as {
+.comment-respond .logged-in-as {
   font-size: 14px;
   font-size: 0.875rem;
   font-style: italic; }
+
+.comment-respond .comment-notes {
+  color: #3a87ad;
+  background: #daeaf3; }
+  .comment-respond .comment-notes #email-notes {
+    display: block; }
+
+/*--------------------------------------------------------------
+## Helpers
+--------------------------------------------------------------*/
+.message-error {
+  color: #b94a48;
+  background: #f8eeee; }
+
+.message-success {
+  color: #468847;
+  background: #cee6ce; }
+
+.message-warning {
+  color: #f1c40f;
+  background: #fef9e8; }
+
+.message-info {
+  color: #3a87ad;
+  background: #daeaf3; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
