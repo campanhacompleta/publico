@@ -775,7 +775,8 @@ a {
 
 .site-news__aside .entry-title {
   font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin: 0; }
 
 /* Site Newsletter */
 .site-newsletter--front-page {
@@ -814,7 +815,6 @@ a {
 
 /* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
 .flag {
-  background-color: #f2f2f2;
   display: table;
   width: 100%; }
   .flag .flag__image,
@@ -830,8 +830,10 @@ a {
     max-width: 125px; }
 
 .flag__body {
-  padding: 1em;
+  padding-left: 1em;
   width: 100%; }
+  .flag__body--padded {
+    padding: 1em; }
 
 /* Extras: they shouldn't be here */
 .all-events-link {
@@ -921,7 +923,6 @@ a {
       font-size: 14px;
       font-size: 0.875rem; }
   .comment-list .comment-body {
-    background: #fff;
     border-top: 2px solid #f2f2f2;
     padding: 1em 0; }
   .comment-list .comment-content a {

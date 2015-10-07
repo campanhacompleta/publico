@@ -55,6 +55,7 @@
 
 	.entry-title {
 		@include font-size(1.25);
+		margin: 0;
 	}
 }
 
@@ -114,7 +115,6 @@
 
 /* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
 .flag {
-	background-color: $color__third;
 	display: table;
 	width: 100%;
 
@@ -136,10 +136,13 @@
 }
 
 .flag__body {
-	padding: 1em;
+	padding-left: 1em;
 	width: 100%;
-}
 
+	&--padded {
+		padding: 1em;
+	}
+}
 /* Extras: they shouldn't be here */
 .all-events-link {
 	margin-top: 1.5em;
