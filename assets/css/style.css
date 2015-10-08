@@ -806,41 +806,6 @@ a {
     .site-footer a:hover {
       color: #f2f2f2; }
 
-/* Helpers */
-.wide {
-  width: 100%; }
-
-@media screen and (min-width: 40.0625em) {
-  .vertical-align--bottom {
-    display: table; }
-    .vertical-align--bottom > .columns {
-      display: table-cell;
-      vertical-align: bottom; }
-    .vertical-align--bottom > .columns, .vertical-align--bottom > [class*="column"] + [class*="column"]:last-child {
-      float: none; } }
-
-/* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
-.flag {
-  display: table;
-  width: 100%; }
-  .flag .flag__image,
-  .flag .flag__body {
-    display: table-cell;
-    vertical-align: middle; }
-  .flag .flag__image {
-    margin-right: 0.5em;
-    white-space: nowrap; }
-    .flag .flag__image img {
-      display: block;
-      max-width: 125px; }
-  .flag .flag__body {
-    padding-left: 1em;
-    width: 100%; }
-    .flag .flag__body--padded {
-      padding: 1em; }
-  .flag--colored {
-    background-color: #f2f2f2; }
-
 /* Extras: they shouldn't be here */
 .all-events-link {
   margin-top: 1.5em; }
@@ -956,6 +921,11 @@ a {
 /*--------------------------------------------------------------
 ## Helpers
 --------------------------------------------------------------*/
+/* Full width elements */
+.wide {
+  width: 100%; }
+
+/* Messages */
 .message-error {
   color: #b94a48;
   background: #f8eeee; }
@@ -971,6 +941,38 @@ a {
 .message-info {
   color: #3a87ad;
   background: #daeaf3; }
+
+/* The Flag Object: http://csswizardry.com/2013/05/the-flag-object/ */
+.flag {
+  display: table;
+  width: 100%; }
+  .flag .flag__image,
+  .flag .flag__body {
+    display: table-cell;
+    vertical-align: middle; }
+  .flag .flag__image {
+    margin-right: 0.5em;
+    white-space: nowrap; }
+    .flag .flag__image img {
+      display: block;
+      max-width: 125px; }
+  .flag .flag__body {
+    padding-left: 1em;
+    width: 100%; }
+    .flag .flag__body--padded {
+      padding: 1em; }
+  .flag--colored {
+    background-color: #f2f2f2; }
+
+/* Vertical alignment for Foundation columns */
+@media screen and (min-width: 40.0625em) {
+  .vertical-align--bottom {
+    display: table; }
+    .vertical-align--bottom > .columns {
+      display: table-cell;
+      vertical-align: bottom; }
+    .vertical-align--bottom > .columns, .vertical-align--bottom > [class*="column"] + [class*="column"]:last-child {
+      float: none; } }
 
 /*--------------------------------------------------------------
 # Infinite scroll
