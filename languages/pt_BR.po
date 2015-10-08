@@ -1,0 +1,284 @@
+# Copyright (C) 2015 redelivre
+# This file is distributed under the GNU General Public License v2 or later.
+# Translators:
+# Eduardo Zulian <eduardo@flutuante.com.br>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Publico\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-10-08 20:55:09+00:00\n"
+"PO-Revision-Date: 2015-10-08 21:40+0000\n"
+"Last-Translator: Eduardo Zulian <eduardo@flutuante.com.br>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/campanha-completa/publico/language/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Não conseguimos encontrar a página."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links"
+" below or a search?"
+msgstr "Parece que nada foi encontrado neste endereço. Que tal tentar alguns dos links abaixo ou, quem sabe, uma pesquisa?"
+
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr "Categorias mais usadas"
+
+#. translators: %1$s: smiley
+#: 404.php:46
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Tente procurar nos arquivos mensais. %1$s"
+
+#: comments.php:40 comments.php:63
+msgid "Comment navigation"
+msgstr "Navegação dos comentários"
+
+#: comments.php:43 comments.php:66
+msgid "Older Comments"
+msgstr "Comentários antigos"
+
+#: comments.php:44 comments.php:67
+msgid "Newer Comments"
+msgstr "Comentários recentes"
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr "Os comentários foram encerrados."
+
+#: footer.php:41
+msgid "Footer Social Links Menu"
+msgstr "Menu de links sociais no rodapé"
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:48
+msgid "Social Links Menu"
+msgstr "Menu de links sociais"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: functions.php:118
+msgid "Social Engagement Area"
+msgstr "Área de engajamento social"
+
+#: functions.php:120
+msgid ""
+"An area on the Front Page to promote participation and civic engagement"
+msgstr "Uma área na capa para promover participação e engajamento cívico"
+
+#: functions.php:128
+msgid "Content Secondary"
+msgstr "Conteúdo secundário"
+
+#: functions.php:130
+msgid "A secondary content area for the Front Page"
+msgstr "Uma área na capa para conteúdos secundários"
+
+#: functions.php:138
+msgid "Content Bottom"
+msgstr "Conteúdo inferior"
+
+#: functions.php:140
+msgid "A content area that comes before the Footer"
+msgstr "Uma área de conteúdo que aparece antes do rodapé"
+
+#: functions.php:148
+msgid "Call to Action"
+msgstr "Chamada para ação"
+
+#: functions.php:150
+msgid "An area for a call to action"
+msgstr "Uma área de chamada para ação"
+
+#: functions.php:158 inc/customizer.php:39
+msgid "Footer"
+msgstr "Rodapé"
+
+#: functions.php:160
+msgid "The website footer"
+msgstr "O rodapé do website"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+#: header.php:51
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/custom-widgets.php:25
+msgid "Feature a video from post format Video"
+msgstr "Destaca um vídeo salvo no formato de post Video"
+
+#: inc/custom-widgets.php:26 inc/custom-widgets.php:59
+msgid "Featured Video"
+msgstr "Vídeo em destaque"
+
+#: inc/custom-widgets.php:104
+msgid "Watch other videos"
+msgstr "Veja outros vídeos"
+
+#: inc/custom-widgets.php:151
+msgid "Title:"
+msgstr "Título:"
+
+#: inc/customizer.php:20
+msgid "Branding"
+msgstr "Marca"
+
+#: inc/customizer.php:31
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:46
+msgid "Proudly powered by WordPress"
+msgstr "Orgulhosamente desenvolvido com WordPress"
+
+#: inc/customizer.php:55
+msgid "Footer text"
+msgstr "Texto do rodapé"
+
+#: inc/extras.php:133 inc/template-tags.php:186
+#: template-parts/content-page.php:28
+msgid "Edit"
+msgstr "Editar"
+
+#: inc/extras.php:137
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+#: inc/template-tags.php:38 search.php:19
+msgid "Search Results for: %s"
+msgstr "Resultados da pesquisa por: %s"
+
+#: single-parlamentar.php:45 template-parts/content-page.php:21
+#: template-parts/content-single.php:29
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: src/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: src/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr "Excluir"
+
+#: src/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr "Incluir"
+
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: A single line translators comment.
+#: src/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+msgid "A"
+msgstr ""
+
+#. translators: A multiline translators comment.
+#: src/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+msgid "B"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Tudo pronto para sua primeira publicação? <a href=\"%1$s\">Então comece aqui</a>."
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Desculpe, mas nada foi encontrado ao pesquisar por estes termos. Por favor, tente novamente com outras palavras-chave."
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Parece que não foi possível encontrar o que você estava procurando. Talvez uma pesquisa ajude."
+
+#. Theme Name of the plugin/theme
+msgid "Público"
+msgstr "Público"
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+#. Description of the plugin/theme
+msgid "A WordPress theme for transparent and democratic political parties"
+msgstr "Um tema para partidos políticos transparentes e democráticos."
+
+#. Author of the plugin/theme
+msgid "redelivre"
+msgstr "redelivre"
+
+#. Author URI of the plugin/theme
+msgid "http://redelivre.org.br"
+msgstr "http://redelivre.org.br"
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
+msgstr "Página com largura total"
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/extras.php:130
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s às %2$s"
+
+#: inc/template-tags.php:89
+msgctxt "post date"
+msgid "Publicado em %s"
+msgstr ""
+
+#: inc/template-tags.php:94
+msgctxt "post author"
+msgid "by %s"
+msgstr "por %s"
+
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""
