@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header flag">
+	<header class="entry-header flag flag--colored">
 		<div class="flag__image">
 			<?php if ( has_post_thumbnail() ) : ?>
 			<div class="entry-image">
@@ -19,7 +19,7 @@
 			<?php endif; ?>
 		</div>
 
-		<div class="flag__body">
+		<div class="flag__body flag__body--padded">
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 			<?php if ( 'post' === get_post_type() ) : ?>

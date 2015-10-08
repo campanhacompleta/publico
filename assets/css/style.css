@@ -827,19 +827,19 @@ a {
   .flag .flag__body {
     display: table-cell;
     vertical-align: middle; }
-
-.flag__image {
-  margin-right: 0.5em;
-  white-space: nowrap; }
-  .flag__image img {
-    display: block;
-    max-width: 125px; }
-
-.flag__body {
-  padding-left: 1em;
-  width: 100%; }
-  .flag__body--padded {
-    padding: 1em; }
+  .flag .flag__image {
+    margin-right: 0.5em;
+    white-space: nowrap; }
+    .flag .flag__image img {
+      display: block;
+      max-width: 125px; }
+  .flag .flag__body {
+    padding-left: 1em;
+    width: 100%; }
+    .flag .flag__body--padded {
+      padding: 1em; }
+  .flag--colored {
+    background-color: #f2f2f2; }
 
 /* Extras: they shouldn't be here */
 .all-events-link {
