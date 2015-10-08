@@ -109,7 +109,14 @@ module.exports = function(grunt) {
               updatePoFiles: false              // Whether to update PO files in the same directory as the POT file.
           }
       }
-    }
+    },
+
+    po2mo: {
+      files: {
+        src: '../languages/*.po',
+        expand: true,
+      },
+    },
   });
 
   // Load npm tasks
@@ -117,8 +124,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-wp-i18n');
+  grunt.loadNpmTasks('grunt-po2mo');
 
   // Register tasks
   grunt.registerTask('default', ['sass', 'watch']);
   grunt.registerTask('i18n', 'makepot');
+  //grunt.registerTask('po2mo', 'makepot');
 }
