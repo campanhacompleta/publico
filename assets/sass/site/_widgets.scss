@@ -37,6 +37,16 @@
 	}
 }
 
+/* Call to Action Widget Area */
+.home.page .widget-area--call-to-action {
+	background-color: $color__third;
+}
+.widget-area--call-to-action {
+	input {
+		margin: 0;
+	}
+}
+
 /* Social Engagement Area */
 .widget-area--social-engagement {
 	background-color: $color__first;

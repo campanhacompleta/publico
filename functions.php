@@ -145,6 +145,16 @@ function publico_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'Call to Action', 'publico' ),
+		'id'            => 'sidebar-call-to-action',
+		'description'   => __( 'A widget area for a call to action', 'publico' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title area__title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'publico' ),
 		'id'            => 'sidebar-footer',
 		'description'   => '',
@@ -153,6 +163,7 @@ function publico_widgets_init() {
 		'before_title'  => '<h4 class="widget-title area__title">',
 		'after_title'   => '</h4>',
 	) );
+
 }
 add_action( 'widgets_init', 'publico_widgets_init' );
 

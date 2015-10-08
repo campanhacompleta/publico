@@ -698,6 +698,13 @@ a {
   .widget-area--main .widget .button {
     width: 100%; }
 
+/* Call to Action Widget Area */
+.home.page .widget-area--call-to-action {
+  background-color: #f2f2f2; }
+
+.widget-area--call-to-action input {
+  margin: 0; }
+
 /* Social Engagement Area */
 .widget-area--social-engagement {
   background-color: #302f5f;
@@ -782,13 +789,6 @@ a {
 .site-news__aside .entry-title {
   font-size: 20px;
   font-size: 1.25rem;
-  margin: 0; }
-
-/* Site Newsletter */
-.site-newsletter--front-page {
-  background-color: #f2f2f2; }
-
-.site-newsletter input {
   margin: 0; }
 
 /* Site footer */

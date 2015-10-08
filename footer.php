@@ -20,14 +20,14 @@
 
 	<?php
 		if ( ! ( is_front_page() ) ) {
-			publico_the_newsletter();
+			get_sidebar( 'call-to-action' );
 		}
 	?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php get_sidebar( 'footer' ); ?>
-		
+
 		<div class="site-info site__section">
 			<div class="row">
 				<div class="medium-12 columns">

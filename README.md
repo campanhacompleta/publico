@@ -34,6 +34,9 @@ O tema possui 4 áreas distintas para widgets. Elas são:
 #### Sidebar / Barra lateral
 A área principal do site. Aparece como barra lateral nas páginas internas.
 
+#### Call to Action Area / Área de chamada para ação
+Presente abaixo do cabeçalho do site na capa e logo acima do *Footer* / Rodapé nas demais páginas, pode ser usada para chamadas para a ação como convites específicos, incrições em newsletters ou algum comunicado especial.
+
 #### Social Engagement Area / Área de engajamento social
 É a área de widgets mais nobre da capa, recebendo destaque visual. Está presente apenas quando usamos a opção `front page` e aparece logo abaixo da imagem do cabeçalho.
 
