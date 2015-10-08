@@ -97,6 +97,7 @@ module.exports = function(grunt) {
           options: {
               cwd: '../',                          // Directory of files to internationalize.
               domainPath: '/languages',                   // Where to save the POT file.
+              exclude: ['src/.*'],
               mainFile: 'style.css',                     // Main project file.
               //potComments: '',                  // The copyright at the beginning of the POT file.
               potFilename: 'publico.pot',                  // Name of the POT file.
