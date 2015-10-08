@@ -1,6 +1,6 @@
 <?php
 /**
- * The front page template 
+ * The front page template
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
+
 			<div class="row">
 				<section class="site-news site__section clearfix">
 					<div class="medium-7 columns">
@@ -32,7 +32,7 @@ get_header(); ?>
 							        )
 							    )
 							) );
-							
+
 							if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post(); ?>
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'hentry--columns clear' ); ?>>
@@ -72,7 +72,7 @@ get_header(); ?>
 							        )
 							    )
 							) );
-							
+
 							if ( $noticias_aside->have_posts() ) : while ( $noticias_aside->have_posts() ) : $noticias_aside->the_post(); ?>
 
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'flag clearfix' ); ?>>
@@ -91,14 +91,14 @@ get_header(); ?>
 
 							<?php endwhile; ?>
 							<?php wp_reset_postdata(); ?>
-							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide">Ver outras notícias</a>
+							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide"><?php __( 'Read other posts', 'publico' ); ?></a>
 							<?php endif; ?>
-							
+
 						</div>
 					</div>
 				</section>
 			</div>
-	
+
 			<?php get_sidebar( 'social-engagement' ); ?>
 
 			<?php get_sidebar( 'content-secondary' ); ?>
