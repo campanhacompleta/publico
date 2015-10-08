@@ -117,7 +117,7 @@ function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Social Engagement Area', 'publico' ),
 		'id'            => 'sidebar-social-engagement',
-		'description'   => 'Use this Front Page Widget to promote participation and civic engagement',
+		'description'   => __( 'An area on the Front Page to promote participation and civic engagement', 'publico' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title area__title">',
@@ -127,7 +127,7 @@ function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Content Secondary', 'publico' ),
 		'id'            => 'sidebar-content-secondary',
-		'description'   => 'Appears only on Front Page',
+		'description'   => __( 'A secondary content area for the Front Page', 'publico' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title area__title">',
@@ -137,7 +137,7 @@ function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Content Bottom', 'publico' ),
 		'id'            => 'sidebar-content-bottom',
-		'description'   => '',
+		'description'   => __( 'A content area that comes before the Footer', 'publico'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title area__title">',
@@ -147,7 +147,7 @@ function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Call to Action', 'publico' ),
 		'id'            => 'sidebar-call-to-action',
-		'description'   => __( 'A widget area for a call to action', 'publico' ),
+		'description'   => __( 'An area for a call to action', 'publico' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title area__title">',
@@ -157,7 +157,7 @@ function publico_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'publico' ),
 		'id'            => 'sidebar-footer',
-		'description'   => '',
+		'description'   => __( 'The website footer', 'publico' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title area__title">',

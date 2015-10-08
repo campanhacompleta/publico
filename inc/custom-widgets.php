@@ -22,8 +22,8 @@ add_action( 'widgets_init', 'publico_register_widgets' );
 class Publico_Widget_Video extends WP_Widget {
 
 	public function __construct() {
-		$widget_ops = array('classname' => 'widget_featured_video', 'description' => __( "Feature a video from post format Video") );
-		parent::__construct('publico-featured-video', __('Featured Video'), $widget_ops);
+		$widget_ops = array('classname' => 'widget_featured_video', 'description' => __( 'Feature a video from post format Video', 'publico' ) );
+		parent::__construct('publico-featured-video', __( 'Featured Video', 'publico' ), $widget_ops);
 		$this->alt_option_name = 'widget_featured_video';
 
 		add_action( 'save_post', array($this, 'flush_widget_cache') );
@@ -56,7 +56,7 @@ class Publico_Widget_Video extends WP_Widget {
 
 		ob_start();
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Featured Video' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Featured Video', 'publico' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
@@ -101,7 +101,7 @@ class Publico_Widget_Video extends WP_Widget {
 					</header><!-- .entry-header -->
 			<?php
 			endwhile;
-			echo '<a href="' . get_post_format_link( 'video' ) . '" class="button">' . __( 'Veja outros vídeos', 'publico' ) . '</a>';
+			echo '<a href="' . get_post_format_link( 'video' ) . '" class="button">' . __( 'Watch other videos', 'publico' ) . '</a>';
 
 			echo $args['after_widget'];
 
