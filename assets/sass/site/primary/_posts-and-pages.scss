@@ -25,7 +25,7 @@
 .page-header {
 	background-color: $color__first;
 	color: #fff;
-	
+
 	.entry-title,
 	.page-title {
 		color: inherit;
@@ -48,11 +48,19 @@
 .blog,
 .archive,
 .search {
-	.entry-header {
-		margin-bottom: 1.5em;
-	}
+	.site-main {
+		.entry-header {
+			margin-bottom: 1.5em;
+		}
 
-	.hentry {
-		margin: 0 0 3em;
+		.hentry {
+			margin: 0 0 3em;
+		}
+
+		.entry-title {
+			font-size: 2rem;
+			line-height: 1.2;
+			margin: 0 0 0.125rem;
+		}
 	}
 }

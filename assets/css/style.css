@@ -855,15 +855,22 @@ a {
   margin-bottom: 1.5em; }
 
 /* Archives, Blog Posts Page & Search */
-.blog .entry-header,
-.archive .entry-header,
-.search .entry-header {
+.blog .site-main .entry-header,
+.archive .site-main .entry-header,
+.search .site-main .entry-header {
   margin-bottom: 1.5em; }
 
-.blog .hentry,
-.archive .hentry,
-.search .hentry {
+.blog .site-main .hentry,
+.archive .site-main .hentry,
+.search .site-main .hentry {
   margin: 0 0 3em; }
+
+.blog .site-main .entry-title,
+.archive .site-main .entry-title,
+.search .site-main .entry-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 0.125rem; }
 
 /*--------------------------------------------------------------
 ## Asides
