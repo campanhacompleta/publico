@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Publico\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-10-08 20:55:09+00:00\n"
-"PO-Revision-Date: 2015-10-08 21:40+0000\n"
+"POT-Creation-Date: 2015-10-08 22:17:46+00:00\n"
+"PO-Revision-Date: 2015-10-09 18:45+0000\n"
 "Last-Translator: Eduardo Zulian <eduardo@flutuante.com.br>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/campanha-completa/publico/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -62,6 +62,10 @@ msgstr "Os comentários foram encerrados."
 #: footer.php:41
 msgid "Footer Social Links Menu"
 msgstr "Menu de links sociais no rodapé"
+
+#: front-page.php:94
+msgid "Read other posts"
+msgstr "Leia outros posts"
 
 #: functions.php:47
 msgid "Primary Menu"
@@ -174,42 +178,6 @@ msgstr "Resultados da pesquisa por: %s"
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: src/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
-#: src/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
-msgid "Exclude"
-msgstr "Excluir"
-
-#: src/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
-msgid "Include"
-msgstr "Incluir"
-
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
-msgid "String"
-msgstr ""
-
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
-msgid "1 Star"
-msgid_plural "%s Stars"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: A single line translators comment.
-#: src/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
-msgid "A"
-msgstr ""
-
-#. translators: A multiline translators comment.
-#: src/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
-msgid "B"
-msgstr ""
-
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Nada encontrado"
@@ -258,8 +226,8 @@ msgstr "Página com largura total"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Um comentário para &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentários para &ldquo;%2$s&rdquo;"
 
 #: inc/extras.php:130
 msgctxt "1: date, 2: time"
@@ -268,17 +236,10 @@ msgstr "%1$s às %2$s"
 
 #: inc/template-tags.php:89
 msgctxt "post date"
-msgid "Publicado em %s"
-msgstr ""
+msgid "Posted on %s"
+msgstr "Publicado em %s"
 
 #: inc/template-tags.php:94
 msgctxt "post author"
 msgid "by %s"
 msgstr "por %s"
-
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
-#: src/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
-msgctxt "a string"
-msgid "String"
-msgstr ""
