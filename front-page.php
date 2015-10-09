@@ -91,7 +91,7 @@ get_header(); ?>
 
 							<?php endwhile; ?>
 							<?php wp_reset_postdata(); ?>
-							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide"><?php __( 'Read other posts', 'publico' ); ?></a>
+							<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="button wide"><?php _e( 'Read other posts', 'publico' ); ?></a>
 							<?php endif; ?>
 
 						</div>
