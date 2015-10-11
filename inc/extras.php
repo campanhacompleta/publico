@@ -30,64 +30,77 @@ add_filter( 'body_class', 'publico_body_classes' );
  * @link https://gist.github.com/slobodan/6156076 Reference #2
  */
 function publico_add_widget_custom_classes() {
-    global $wp_registered_sidebars, $wp_registered_widgets;
- 
+    global $wp_registered_widgets;
+
     // Find those widgets
     $sidebars = wp_get_sidebars_widgets();
- 
-    if ( empty( $sidebars ) ) {
+
+    if ( empty ( $sidebars ) ) {
         return;
     }
- 
-    // Loop through each widget and add new classes
+
+    // Loop through each widget area
     foreach ( $sidebars as $sidebar_id => $widgets ) {
-        if ( empty ( $widgets ) || 'sidebar-main' == $sidebar_id ) {
-        	continue;
+
+        // Our main sidebar doesn't need additional classes
+        if ( 'sidebar-main' == $sidebar_id ) {
+            continue;
         }
- 
+
         // Get the number of widgets on the sidebar
         $number_of_widgets = count( $widgets );
-        
+
         foreach ( $widgets as $i => $widget_id ) {
 
-        	// Widget order
-        	$wp_registered_widgets[$widget_id]['classname'] .= ' widget-order-' . ( $i + 1 ) . ' ' . $sidebar_id;
-        	
-        	// Widget Area count
-        	$wp_registered_widgets[$widget_id]['classname'] .= ' widget-count-' . $number_of_widgets;
- 
- 		// Add first widget class
- 		if ( 0 == $i ) {
- 			$wp_registered_widgets[$widget_id]['classname'] .= ' widget-first';
- 		}
- 
- 		// Add last widget class
- 		if ( $number_of_widgets == ( $i + 1 ) ) {
- 			$wp_registered_widgets[$widget_id]['classname'] .= ' widget-last';
- 		}
- 		
- 		// Add specific widget classes
- 		if ( $number_of_widgets % 4 == 0 || $number_of_widgets > 6 ) { 
- 			// Four widgets er row if there are exactly four or more than six
- 			$wp_registered_widgets[$widget_id]['classname'] .= ' medium-3';
- 		} elseif ( $number_of_widgets >= 3 ) {
- 			// Three widgets per row if there's three or more widgets 
- 			$wp_registered_widgets[$widget_id]['classname'] .= ' medium-4';
- 		} elseif ( 2 == $number_of_widgets ) { 
- 			// Otherwise show two widgets per row, but with a special layout design for Content Secondary Widget Area ('sidebar-content-secondary')
- 			if ( $sidebar_id == 'sidebar-content-secondary' && ( 0 == $i ) ) {
- 				$wp_registered_widgets[$widget_id]['classname'] .= ' medium-8';
- 			}
- 			elseif ( $number_of_widgets == ( $i + 1 ) ) {
- 				$wp_registered_widgets[$widget_id]['classname'] .= ' medium-4';
- 			}
- 			else {
- 				$wp_registered_widgets[$widget_id]['classname'] .= ' medium-6';
- 			}
- 		}
- 		
- 		// Add Foundation columns
- 		$wp_registered_widgets[$widget_id]['classname'] .= ' columns';
+            $widget_classes = '';
+            $widget_position = ( $i + 1 );
+
+            // Add a class for widget position
+            $widget_classes .= ' widget-position-' . $widget_position;
+
+            // Add a class for the total number of widgets in this widget area
+            $widget_classes .= ' widget-count-' . $number_of_widgets;
+
+            // Add first widget class
+            if ( 1 == $widget_position ) {
+                $widget_classes .= ' widget-first';
+            }
+
+            // Add last widget class
+            if ( $number_of_widgets == $widget_position ) {
+                $widget_classes .= ' widget-last';
+            }
+
+            // Add specific Foundation classes for layouts with, respectively, 6, 4, 3 or 2 columns
+            if ( 6 == $number_of_widgets ) {
+                $widget_classes .= ' medium-2';
+            }
+            elseif ( 4 == $number_of_widgets ) {
+                $widget_classes .= ' medium-3';
+            }
+            elseif ( 3 == $number_of_widgets ) {
+                $widget_classes .= ' medium-4';
+            }
+            elseif ( 2 == $number_of_widgets ) {
+                if ( 'sidebar-content-secondary' == $sidebar_id && ( 1 == $widget_position ) ) {
+                    $widget_classes .= ' medium-8';
+                }
+                elseif ( $number_of_widgets == $widget_position ) {
+                    $widget_classes .= ' medium-4';
+                }
+                else {
+                    $widget_classes .= ' medium-6';
+                }
+            }
+            else {
+                $widget_classes .= ' medium-12';
+            }
+
+            // Add Foundation columns
+            $widget_classes .= ' columns';
+
+            // Save new classes into global $wp_registered_widgets
+            $wp_registered_widgets[$widget_id]['classname'] .= $widget_classes;
         }
     }
 }
