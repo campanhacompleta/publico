@@ -168,3 +168,15 @@ function publico_wp_list_comments_callback( $comment, $args, $depth ) {
             </article><!-- .comment-body -->
 <?php
 }
+
+/**
+ * Removes Campanha Completa built-in components from menu.
+ */
+function publico_remove_campaign_menus() {
+    // Social networks
+    remove_menu_page( 'admin.php?page=campaign_social_networks' );
+
+    // Events
+    remove_menu_page( 'edit.php?post_type=agenda' );
+}
+add_action( 'admin_menu', 'publico_remove_campaign_menus' );
