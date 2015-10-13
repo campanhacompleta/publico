@@ -1,0 +1,22 @@
+/* Events Manager Plugin */
+.widget_em_widget {
+	li {
+		margin-bottom: 1.5em;
+	}
+
+	.all-events-link {
+		a {
+			background-color: $color__second;
+			display: block;
+		    color: #fff;
+		    line-height: 1;
+		    padding: 1rem 2rem 1.0625rem;line-height: 1;
+		    text-align: center;
+		    text-transform: lowercase;
+
+		    &:hover {
+		    	background-color: $color__first;
+		    }
+		}
+	}
+}

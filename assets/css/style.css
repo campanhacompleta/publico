@@ -807,9 +807,6 @@ a {
       color: #f2f2f2; }
 
 /* Extras: they shouldn't be here */
-.all-events-link {
-  margin-top: 1.5em; }
-
 .vcard {
   border: 0;
   margin: 0;
@@ -1122,3 +1119,19 @@ object {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 1.5rem; }
+
+/* Events Manager Plugin */
+.widget_em_widget li {
+  margin-bottom: 1.5em; }
+
+.widget_em_widget .all-events-link a {
+  background-color: #aa2446;
+  display: block;
+  color: #fff;
+  line-height: 1;
+  padding: 1rem 2rem 1.0625rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: lowercase; }
+  .widget_em_widget .all-events-link a:hover {
+    background-color: #302f5f; }
