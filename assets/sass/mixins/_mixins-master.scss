@@ -42,8 +42,9 @@
 // Messages & Alerts
 %message {
 	@include font-size(0.875);
-	padding: 1rem;
+	display: block;
 	margin-bottom: 1.5rem;
+	padding: 1rem;
 }
 
 @mixin message($color) {

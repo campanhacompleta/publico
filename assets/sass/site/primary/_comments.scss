@@ -57,8 +57,7 @@
 	}
 
 	.logged-in-as {
-		@include font-size(0.875);
-		font-style: italic;
+		@include message($color__info);
 	}
 
 	.comment-notes {
@@ -68,4 +67,11 @@
 			display: block;
 		}
 	}
+}
+
+.no-comments,
+.must-log-in,
+.comment-reply-login,
+.form-allowed-tags {
+	@include message($color__info);
 }
