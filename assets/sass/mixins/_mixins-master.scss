@@ -45,6 +45,11 @@
 	display: block;
 	margin-bottom: 1.5rem;
 	padding: 1rem;
+
+	code {
+		background: none;
+		color: inherit;
+	}
 }
 
 @mixin message($color) {

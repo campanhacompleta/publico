@@ -52,6 +52,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: block;
   margin-bottom: 1.5rem;
   padding: 1rem; }
+  .comment-respond .logged-in-as code, .comment-respond .comment-notes code, .no-comments code,
+  .must-log-in code,
+  .comment-reply-login code,
+  .form-allowed-tags code, .message-error code, .message-success code, .message-warning code, .message-info code {
+    background: none;
+    color: inherit; }
 
 /*--------------------------------------------------------------
 # Normalize
@@ -263,21 +269,19 @@ blockquote {
 address {
   margin: 0 0 1.5em; }
 
-pre {
-  background: #eee;
+pre, code, kbd, tt, var {
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+pre {
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
 
 abbr, acronym {
   border-bottom: 1px dotted #666;
