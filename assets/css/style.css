@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .comment-respond .logged-in-as, .comment-respond .comment-notes, .no-comments,
 .must-log-in,
 .comment-reply-login,
-.form-allowed-tags, .message-error, .message-success, .message-warning, .message-info {
+.form-allowed-tags, .message-error, .message-success, .message-warning, .message-info, .sendpress-signup-form #error, .sendpress-signup-form #thanks {
   font-size: 14px;
   font-size: 0.875rem;
   display: block;
@@ -55,7 +55,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .comment-respond .logged-in-as code, .comment-respond .comment-notes code, .no-comments code,
   .must-log-in code,
   .comment-reply-login code,
-  .form-allowed-tags code, .message-error code, .message-success code, .message-warning code, .message-info code {
+  .form-allowed-tags code, .message-error code, .message-success code, .message-warning code, .message-info code, .sendpress-signup-form #error code, .sendpress-signup-form #thanks code {
     background: none;
     color: inherit; }
 
@@ -1149,3 +1149,35 @@ object {
   text-transform: lowercase; }
   .widget_em_widget .all-events-link a:hover {
     background-color: #302f5f; }
+
+.sendpress-signup-form #error {
+  color: #b94a48;
+  background: #f8eeee; }
+
+.sendpress-signup-form #thanks {
+  color: #468847;
+  background: #cee6ce; }
+
+.widget-area--call-to-action .sendpress-signup-form p[name=firstname],
+.widget-area--call-to-action .sendpress-signup-form p[name=lastname],
+.widget-area--call-to-action .sendpress-signup-form p[name=email],
+.widget-area--call-to-action .sendpress-signup-form p.submit {
+  display: inline-block;
+  float: left;
+  width: 25%; }
+
+.widget-area--call-to-action .sendpress-signup-form p[name=firstname],
+.widget-area--call-to-action .sendpress-signup-form p[name=lastname],
+.widget-area--call-to-action .sendpress-signup-form p[name=email] {
+  padding-right: 0.5em; }
+
+.widget-area--call-to-action .sendpress-signup-form .sp_firstname,
+.widget-area--call-to-action .sendpress-signup-form .sp_lastname,
+.widget-area--call-to-action .sendpress-signup-form .sp_email,
+.widget-area--call-to-action .sendpress-signup-form .sendpress-submit {
+  width: 100%; }
+
+.widget-area--call-to-action .sendpress-signup-form .sendpress-submit {
+  font-size: 0.875em;
+  height: 2.3125rem;
+  padding: 3px; }

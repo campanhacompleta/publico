@@ -1,0 +1,42 @@
+.sendpress-signup-form {
+	#error {
+		@include message($color__error);
+	}
+
+	#thanks {
+		@include message($color__success);
+	}
+}
+
+// TODO: Error prone. SendPress classes and empty <p> should be fixed
+.widget-area--call-to-action {
+	.sendpress-signup-form {
+		p[name=firstname],
+		p[name=lastname],
+		p[name=email],
+		p.submit {
+			display: inline-block;
+			float: left;
+			width: 25%;
+		}
+
+		p[name=firstname],
+		p[name=lastname],
+		p[name=email] {
+			padding-right: 0.5em;
+		}
+
+		.sp_firstname,
+		.sp_lastname,
+		.sp_email,
+		.sendpress-submit {
+			width: 100%;
+		}
+
+		.sendpress-submit {
+			font-size: 0.875em;
+			height: 2.3125rem;
+			padding: 3px;
+		}
+	}
+}
