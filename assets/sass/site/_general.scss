@@ -34,13 +34,18 @@
 .site-news__main {
 	.entry-header {
 		background-color: $color__first;
-		color: #fff; 
-		margin: 0 0 1.5em;
+		color: #fff;
+
 		@include padding-main();
 
 		a {
 			color: #fff;
 		}
+	}
+
+	.entry-title {
+		font-size: 2em;
+		line-height: 1.2;
 	}
 
 	.entry-content {

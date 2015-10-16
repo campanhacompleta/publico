@@ -783,10 +783,13 @@ a {
 .site-news__main .entry-header {
   background-color: #302f5f;
   color: #fff;
-  margin: 0 0 1.5em;
   padding: 1.5em; }
   .site-news__main .entry-header a {
     color: #fff; }
+
+.site-news__main .entry-title {
+  font-size: 2em;
+  line-height: 1.2; }
 
 .site-news__main .entry-content {
   padding: 1.5em; }
