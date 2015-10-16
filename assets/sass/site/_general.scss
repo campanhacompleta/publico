@@ -56,11 +56,36 @@
 .site-news__aside {
 	.hentry {
 		background-color: $color__third;
+
+		&:nth-child(odd) {
+			.posted-on {
+				background-color: $color__second;
+			}
+		}
+
+		&:nth-child(even) {
+			.posted-on {
+				background-color: $color__first;
+			}
+		}
 	}
 
 	.entry-title {
 		@include font-size(1.25);
 		margin: 0;
+	}
+
+	.posted-on {
+		color: #fff;
+		display: block;
+		@include font-size(1.25);
+		font-weight: bold;
+		padding: 0.5rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;
 	}
 }
 

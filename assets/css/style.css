@@ -796,11 +796,28 @@ a {
 
 .site-news__aside .hentry {
   background-color: #f2f2f2; }
+  .site-news__aside .hentry:nth-child(odd) .posted-on {
+    background-color: #aa2446; }
+  .site-news__aside .hentry:nth-child(even) .posted-on {
+    background-color: #302f5f; }
 
 .site-news__aside .entry-title {
   font-size: 20px;
   font-size: 1.25rem;
   margin: 0; }
+
+.site-news__aside .posted-on {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%; }
 
 /* Site footer */
 .site-footer {
@@ -973,6 +990,7 @@ a {
     vertical-align: middle; }
   .flag .flag__image {
     margin-right: 0.5em;
+    position: relative;
     white-space: nowrap; }
     .flag .flag__image img {
       display: block;

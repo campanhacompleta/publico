@@ -81,6 +81,7 @@ get_header(); ?>
 										<div class="entry-image">
 											<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
 										</div><!-- .entry-image -->
+										<span class="posted-on"><?php the_time('d|m'); ?></span>
 										<?php endif; ?>
 									</div>
 
