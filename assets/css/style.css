@@ -794,14 +794,20 @@ a {
 .site-news__main .entry-content {
   padding: 1.5em; }
 
-.site-news__aside .hentry {
-  background-color: #f2f2f2; }
-  .site-news__aside .hentry:nth-child(odd) .posted-on {
+.site-news__aside .aside__link {
+  background-color: #f2f2f2;
+  display: block; }
+  .site-news__aside .aside__link:nth-child(odd) .posted-on {
     background-color: #aa2446; }
-  .site-news__aside .hentry:nth-child(even) .posted-on {
+  .site-news__aside .aside__link:nth-child(odd):hover {
+    box-shadow: inset 0 0 0 3px #aa2446; }
+  .site-news__aside .aside__link:nth-child(even) .posted-on {
     background-color: #302f5f; }
+  .site-news__aside .aside__link:nth-child(even):hover {
+    box-shadow: inset 0 0 0 3px #302f5f; }
 
 .site-news__aside .entry-title {
+  color: #302f5f;
   font-size: 20px;
   font-size: 1.25rem;
   margin: 0; }

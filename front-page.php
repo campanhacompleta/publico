@@ -75,20 +75,22 @@ get_header(); ?>
 
 							if ( $noticias_aside->have_posts() ) : while ( $noticias_aside->have_posts() ) : $noticias_aside->the_post(); ?>
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class( 'flag clearfix' ); ?>>
-									<div class="flag__image">
-										<?php if ( has_post_thumbnail() ) : ?>
-										<div class="entry-image">
-											<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
-										</div><!-- .entry-image -->
-										<span class="posted-on"><?php the_time('d|m'); ?></span>
-										<?php endif; ?>
-									</div>
+								<a class="aside__link" href="<?php the_permalink(); ?>" rel="bookmark">
+									<article id="post-<?php the_ID(); ?>" <?php post_class( 'flag clearfix' ); ?>>
+											<div class="flag__image">
+												<?php if ( has_post_thumbnail() ) : ?>
+												<div class="entry-image">
+													<?php the_post_thumbnail( 'thumbnail' ); ?>
+												</div><!-- .entry-image -->
+												<span class="posted-on"><?php the_time('d|m'); ?></span>
+												<?php endif; ?>
+											</div>
 
-									<div class="flag__body flag__body--padded">
-										<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-									</div>
-								</article><!-- #post-## -->
+											<div class="flag__body flag__body--padded">
+												<h2 class="entry-title"><?php the_title(); ?></h2>
+											</div>
+									</article><!-- #post-## -->
+								</a>
 
 							<?php endwhile; ?>
 							<?php wp_reset_postdata(); ?>

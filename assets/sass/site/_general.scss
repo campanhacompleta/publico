@@ -54,12 +54,17 @@
 }
 
 .site-news__aside {
-	.hentry {
+	.aside__link {
 		background-color: $color__third;
+		display: block;
 
 		&:nth-child(odd) {
 			.posted-on {
 				background-color: $color__second;
+			}
+
+			&:hover {
+    			box-shadow: inset 0 0 0 3px $color__second;
 			}
 		}
 
@@ -67,10 +72,15 @@
 			.posted-on {
 				background-color: $color__first;
 			}
+
+			&:hover {
+    			box-shadow: inset 0 0 0 3px $color__first;
+			}
 		}
 	}
 
 	.entry-title {
+		color: $color__first;
 		@include font-size(1.25);
 		margin: 0;
 	}
