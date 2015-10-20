@@ -62,6 +62,14 @@ function publico_the_page_header() {
 		echo $page_header_content;
 		echo '</div></div></header><!-- .page-header -->';
 
+	else :
+		echo '<header class="page-header site__section" aria-hidden="true"><div class="row"><div class="large-12 columns">';
+		echo '<h1 class="page-title">' . esc_html__( 'Oops! That page can&rsquo;t be found.', 'publico' ) . '</h1>';
+		echo '<div class="page-description taxonomy-description">';
+		echo esc_html__( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'publico' );
+		echo '</div>';
+		echo '</div></div></header><!-- .page-header -->';
+
 	endif;
 }
 endif;
