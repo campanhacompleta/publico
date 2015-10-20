@@ -903,6 +903,13 @@ a {
   line-height: 1.2;
   margin: 0 0 0.125rem; }
 
+/* 404 */
+.error404 .page-content .search-form {
+  margin-bottom: 3em; }
+
+.error404 .page-content .search-submit {
+  display: none; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
