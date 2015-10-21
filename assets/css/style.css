@@ -701,6 +701,9 @@ a {
     padding: 0; }
   .widget p:last-child {
     margin-bottom: 0; }
+  .widget.widget-count-1,
+  .widget.widget-last {
+    margin-bottom: 0; }
 
 /* Main Widget Area */
 .widget-area--main .widget {

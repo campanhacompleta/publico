@@ -19,6 +19,12 @@
 	p:last-child {
 		margin-bottom: 0;
 	}
+
+	// If there's only one widget or if it's the last one, remove bottom margin
+	&.widget-count-1,
+	&.widget-last {
+		margin-bottom: 0;
+	}
 }
 
 /* Main Widget Area */
