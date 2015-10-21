@@ -684,6 +684,9 @@ a {
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
+  @media screen and (min-width: 40em) {
+    .widget {
+      margin: 0; } }
   .widget select {
     max-width: 100%; }
   .widget ul {
