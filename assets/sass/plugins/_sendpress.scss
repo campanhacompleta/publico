@@ -13,11 +13,10 @@
 	.sendpress-signup-form {
 		p[name=firstname],
 		p[name=lastname],
-		p[name=email],
-		p.submit {
+		p[name=email] {
 			display: inline-block;
 			float: left;
-			width: 25%;
+			width: 33.333%;
 		}
 
 		p[name=firstname],
@@ -37,6 +36,20 @@
 			font-size: 0.875em;
 			height: 2.3125rem;
 			padding: 3px;
+		}
+
+		@media screen and (min-width: 37.50em) {
+			p[name=firstname],
+			p[name=lastname],
+			p[name=email] {
+				width: 25%;
+			}
+
+			p.submit {
+				display: inline-block;
+				float: left;
+				width: 25%;
+			}
 		}
 	}
 }

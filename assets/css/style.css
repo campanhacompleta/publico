@@ -1194,11 +1194,10 @@ object {
 
 .widget-area--call-to-action .sendpress-signup-form p[name=firstname],
 .widget-area--call-to-action .sendpress-signup-form p[name=lastname],
-.widget-area--call-to-action .sendpress-signup-form p[name=email],
-.widget-area--call-to-action .sendpress-signup-form p.submit {
+.widget-area--call-to-action .sendpress-signup-form p[name=email] {
   display: inline-block;
   float: left;
-  width: 25%; }
+  width: 33.333%; }
 
 .widget-area--call-to-action .sendpress-signup-form p[name=firstname],
 .widget-area--call-to-action .sendpress-signup-form p[name=lastname],
@@ -1215,3 +1214,13 @@ object {
   font-size: 0.875em;
   height: 2.3125rem;
   padding: 3px; }
+
+@media screen and (min-width: 37.5em) {
+  .widget-area--call-to-action .sendpress-signup-form p[name=firstname],
+  .widget-area--call-to-action .sendpress-signup-form p[name=lastname],
+  .widget-area--call-to-action .sendpress-signup-form p[name=email] {
+    width: 25%; }
+  .widget-area--call-to-action .sendpress-signup-form p.submit {
+    display: inline-block;
+    float: left;
+    width: 25%; } }
