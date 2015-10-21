@@ -493,8 +493,13 @@ a {
   display: block; }
 
 .menu-toggle {
-  margin: 1.5em auto;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 1.5em auto 0;
   text-transform: uppercase !important; }
+
+.main-navigation.toggled .menu {
+  margin-top: 1.5rem; }
 
 @media screen and (min-width: 40.0625em) {
   .menu-toggle {
@@ -770,6 +775,8 @@ a {
 .site-header .site-branding {
   margin: 0 auto;
   text-align: center; }
+  .site-header .site-branding .site-logo {
+    max-width: 200px; }
 
 .site-header .site-title {
   font-size: 1.5em;

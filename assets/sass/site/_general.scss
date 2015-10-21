@@ -12,6 +12,10 @@
 	.site-branding {
 		margin: 0 auto;
 		text-align: center;
+
+		.site-logo {
+			max-width: 200px;
+		}
 	}
 
 	.site-title {
