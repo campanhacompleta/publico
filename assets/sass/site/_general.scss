@@ -114,10 +114,17 @@
 		.site-credits {
 			@include font-size(0.875);
 		}
+
+		a {
+			color: #fff;
+
+			&:hover {
+				color: lighten($color__second, 36);
+			}
+		}
 	}
 
 	a {
-		color: #fff;
 		margin-bottom: 0.125em;
 
 		&:hover {

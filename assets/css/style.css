@@ -730,11 +730,7 @@ a {
   background-color: #302f5f;
   color: #fff; }
   .widget-area--social-engagement a {
-    color: #fff; }
-    .widget-area--social-engagement a:hover,
-    .widget-area--social-engagement a:focus,
-    .widget-area--social-engagement a:active {
-      color: #aa2446; }
+    color: #8584c2; }
   .widget-area--social-engagement .widget {
     border-left: 3px solid #aa2446; }
     .widget-area--social-engagement .widget .widget-title {
@@ -747,11 +743,7 @@ a {
   color: #fff; }
 
 .widget-area--footer a {
-  color: #fff; }
-  .widget-area--footer a:hover,
-  .widget-area--footer a:focus,
-  .widget-area--footer a:active {
-    color: #aa2446; }
+  color: #8584c2; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -848,8 +840,11 @@ a {
     .site-footer .site-info .site-credits {
       font-size: 14px;
       font-size: 0.875rem; }
+    .site-footer .site-info a {
+      color: #fff; }
+      .site-footer .site-info a:hover {
+        color: #ea9cb0; }
   .site-footer a {
-    color: #fff;
     margin-bottom: 0.125em; }
     .site-footer a:hover {
       color: #f2f2f2; }

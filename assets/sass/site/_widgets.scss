@@ -20,7 +20,7 @@
 		margin-bottom: 0;
 	}
 
-	// If there's only one widget or if it's the last one, remove bottom margin
+	// Remove bottom margin if there's only one widget or it's the last one
 	&.widget-count-1,
 	&.widget-last {
 		margin-bottom: 0;
@@ -62,7 +62,9 @@
 	background-color: $color__first;
 	color: #fff;
 
-	@include link-color--reverse();
+	a {
+		color: lighten($color__first, 36);
+	}
 
 	.widget {
 		border-left: 3px solid $color__second;
@@ -82,7 +84,9 @@
 		color: #fff;
 	}
 
-	@include link-color--reverse();
+	a {
+		color: lighten($color__first, 36);
+	}
 }
 
 /* Search widget. */
