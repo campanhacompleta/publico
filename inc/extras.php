@@ -42,8 +42,8 @@ function publico_add_widget_custom_classes() {
     // Loop through each widget area
     foreach ( $sidebars as $sidebar_id => $widgets ) {
 
-        // Our main sidebar doesn't need additional classes
-        if ( 'sidebar-main' == $sidebar_id ) {
+        // Our main sidebar doesn't need additional classes or is null
+        if ( 'sidebar-main' == $sidebar_id || empty($widgets) ) {
             continue;
         }
 
