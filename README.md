@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/campanhacompleta/publico.png?label=ready&title=Ready)](https://waffle.io/campanhacompleta/publico)
 *For now, there's only a Brazilian Portuguese documentation*
 
 # Publico
