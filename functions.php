@@ -197,6 +197,13 @@ function publico_scripts() {
 	wp_enqueue_script( 'publico-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'publico-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	
+	wp_enqueue_style( 'publico-delibera-css', get_template_directory_uri() . '/assets/css/delibera.css', array('delibera_style'), '1.0' );
+	
+	if('pauta' == get_post_type())
+	{
+		wp_enqueue_style( 'publico-delibera-css' );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
