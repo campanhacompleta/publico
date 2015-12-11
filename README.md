@@ -8,7 +8,9 @@ A WordPress theme for transparent and democratic political parties
 ### Menus
 Há duas áreas de menus no tema: a do cabeçalho, responsável pela navegação geral do site, e a do rodapé, específica para o uso de redes sociais.
 
-Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele para uso na área *Social Links Menu* (Menu de links sociais), para inserir uma rede, basta inserir o linque da rede na área "links" e adicionar ao menu, colocar qual rede é no rótulo ajuda a gestão. O tema se encarregará de trocar os títulos dos links sociais por ícones. No momento, os ícones suportados são os seguintes:
+Para adicionar as redes sociais ao rodapé, basta criar um menu e salvá-lo para uso na área *Social Links Menu* (Menu de links sociais). Para inserir uma rede, basta inserir o link da rede na área "links" e adicionar ao menu; colocar qual rede é no rótulo ajuda a gestão. O tema se encarregará de trocar os títulos dos links sociais por ícones.
+
+No momento, os ícones suportados são os seguintes:
 
 * Twitter
 * Facebook
@@ -25,6 +27,16 @@ Para adicionar as redes sociais ao rodapé, basta criar um menu e salvar ele par
 * YouTube
 * Email (através do endereço `mailto:email@dominio.com`)
 * Feed (usando especificamente `/feed/` na URL)
+
+#### Como fazer para que os menus abram em uma nova aba ou janela?
+
+Dentro do menu **Opções de Tela** (ele está localizado na área superior direita da página), selecione a opção **Destino do link**:
+
+![Opções de tela](https://cldup.com/p2k8xDGHbn-3000x3000.png)
+
+Após isso, edite cada item do seu menu, selecionando a opção **Abrir link em uma nova janela/aba**:
+
+![](https://cldup.com/WSCEIssWLG-3000x3000.png)
 
 ### Posts e destaques na capa
 São mostrados 5 posts na capa, com um link para o arquivo. É possível escolher o destaque principal ao marcar um post como *fixo*. Caso nenhum post seja marcado como *fixo*, a área principal mostrará o último post criado.
