@@ -170,6 +170,7 @@ if ( ! function_exists( 'publico_the_first_embed' ) ) :
  * Prints HTML with the first embed inside the post content
  *
  * @uses get_media_embedded_in_content()
+ * @link http://wordpress.stackexchange.com/questions/175793/get-first-video-from-the-post-both-embed-and-video-shortcodes
  */
 function publico_the_first_embed( $post_id ) {
     $post = get_post( $post_id );
@@ -178,13 +179,17 @@ function publico_the_first_embed( $post_id ) {
     $content = do_shortcode( apply_filters( 'the_content', $post->post_content ) );
     $embeds = get_media_embedded_in_content( $content );
 
-    if( ! empty ( $embeds ) ) {
+    if ( ! empty ( $embeds ) ) {
     	// The first item of the array is the first embedded media in the content
 		$first_embed = $embeds[0];
 		echo $first_embed;
    	}
 }
 endif;
+
+function publico_the_first_video() {
+	
+}
 
 if ( ! function_exists( 'publico_entry_footer' ) ) :
 /**
