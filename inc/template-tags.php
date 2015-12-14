@@ -117,54 +117,6 @@ function publico_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'publico_the_newsletter' ) ) :
-/**
- * Prints HTML with the newsletter form
- */
-function publico_the_newsletter() {
-
-	if ( is_front_page() ) {
-		$newsletter_class="site-newsletter site-newsletter--front-page";
-	}
-	else {
-		$newsletter_class="site-newsletter";
-	}
-	
-	echo '<div class="' . $newsletter_class . ' site__section">';
-	echo '
-	<div class="sendpress-signup-form">
-
-			<div class="row"><div class="large-12 columns">
-			<h4 class="area__title">Cadastre-se</h4>
-			</div></div>
-
-			<div class="row">
-				<form id="sendpress_signup" method="POST" class="sendpress-signup">
-					<div id="form-wrap">
-						<div class="medium-4 columns">
-						<p name="firstname">
-							<input type="text" class="sp_firstname" orig="Nome" value="" placeholder="Nome" name="sp_firstname">
-						</p>
-						</div>
-						<div class="medium-4 columns">
-						<p name="email">
-							<input type="text" class="sp_email" orig="E-Mail" value="" placeholder="Email" name="sp_email">
-						</p>
-						</div>
-						<div class="medium-4 columns">
-						<p class="submit">
-							<input value="Cadastrar" class="sendpress-submit button small wide" type="submit" id="submit" name="submit">
-						</p>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>';
-	echo '</div>';
-
-}
-endif;
-
 if ( ! function_exists( 'publico_the_first_embed' ) ) :
 /**
  * Prints HTML with the first embed inside the post content
@@ -186,10 +138,6 @@ function publico_the_first_embed( $post_id ) {
    	}
 }
 endif;
-
-function publico_the_first_video() {
-	
-}
 
 if ( ! function_exists( 'publico_entry_footer' ) ) :
 /**
