@@ -887,6 +887,31 @@ a {
 .single .entry-image {
   margin-bottom: 1.5em; }
 
+/* Sharing */
+.entry-share {
+  border-top: 3px solid #302f5f;
+  padding-top: 1.5rem;
+  margin-bottom: 3rem; }
+
+.share-list {
+  display: table;
+  margin: 0;
+  width: 100%; }
+  .share-list li {
+    display: table-cell;
+    width: 25%; }
+  .share-list a {
+    background-color: #aa2446;
+    color: #fff !important;
+    display: block;
+    margin-right: 0.125em;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: lowercase; }
+    .share-list a:hover {
+      background-color: #302f5f;
+      color: #fff; }
+
 /* Archives, Blog Posts Page & Search */
 .blog .site-main .entry-header,
 .archive .site-main .entry-header,

@@ -144,6 +144,8 @@ if ( ! function_exists( 'publico_entry_footer' ) ) :
  * Prints HTML with meta information for the categories, tags and comments.
  */
 function publico_entry_footer() {
+	publico_entry_share();
+
 	edit_post_link( esc_html__( 'Edit', 'publico' ), '<span class="edit-link">', '</span>' );
 }
 endif;
@@ -178,6 +180,32 @@ function publico_categorized_blog() {
 		return false;
 	}
 }
+
+if ( ! function_exists( 'publico_entry_share' ) ) :
+/**
+ * Prints HTML with share buttons
+ */
+function publico_entry_share() {
+
+	$permalink = wp_get_shortlink();
+	?>
+	<div class="entry-share">
+		<h4 class="area__title"><?php _e( 'Compartilhe', 'publico' ); ?></h4>
+		<ul class="share-list">
+			<li class="share__item">
+				<a href="https://twitter.com/home?status=<?php echo $permalink; ?>" class="share-link share-link--twitter">Twitter</a>
+			</li>
+			<li class="share__item">
+				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>" class="share-link share-link--facebook">Facebook</a>
+			</li>
+			<li class="share__item">
+				<a href="https://plus.google.com/share?url=<?php echo $permalink; ?>" class="share-link share-link--googleplus">Google+</a>
+			</li>
+		</ul>
+	</div>
+	<?php
+}
+endif;
 
 /**
  * Flush out the transients used in publico_categorized_blog.
