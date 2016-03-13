@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row site__section vertical-align--bottom">
-			
+
 			<div class="medium-3 columns">
 				<div class="site-branding">
 					<?php
@@ -61,12 +61,6 @@
 			</div>
 		<?php endif; // End header image check. ?>
 	</header><!-- #masthead -->
-
-	<?php
-		if ( is_front_page() ) {
-			get_sidebar( 'call-to-action' );
-		}
-	?>
 
 	<div id="content" class="site-content site__section">
 

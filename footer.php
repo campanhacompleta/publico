@@ -18,11 +18,7 @@
 
 	<?php get_sidebar( 'content-bottom' ); ?>
 
-	<?php
-		if ( ! ( is_front_page() ) ) {
-			get_sidebar( 'call-to-action' );
-		}
-	?>
+	<?php get_sidebar( 'call-to-action' );?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 

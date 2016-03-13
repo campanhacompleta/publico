@@ -719,9 +719,6 @@ a {
     width: 100%; }
 
 /* Call to Action Widget Area */
-.home.page .widget-area--call-to-action {
-  background-color: #f2f2f2; }
-
 .widget-area--call-to-action input {
   margin: 0; }
 
