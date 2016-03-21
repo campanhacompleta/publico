@@ -28,7 +28,7 @@ get_header(); ?>
 							<div class="medium-6 medium-push-6 columns">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div class="entry-image">
-										<?php the_post_thumbnail(); ?>
+										<?php the_post_thumbnail( 'parlamentar-main' ); ?>
 									</div><!-- .entry-image -->
 								<?php endif; ?>
 							</div>
