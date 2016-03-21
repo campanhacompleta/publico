@@ -193,13 +193,13 @@ function publico_entry_share() {
 		<h4 class="area__title"><?php _e( 'Compartilhe', 'publico' ); ?></h4>
 		<ul class="share-list">
 			<li class="share__item">
-				<a href="https://twitter.com/home?status=<?php echo $permalink; ?>" class="share-link share-link--twitter">Twitter</a>
+				<a href="https://twitter.com/home?status=<?php echo $permalink; ?>" target="_blank" class="share-link share-link--twitter">Twitter</a>
 			</li>
 			<li class="share__item">
-				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>" class="share-link share-link--facebook">Facebook</a>
+				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>" target="_blank" class="share-link share-link--facebook">Facebook</a>
 			</li>
 			<li class="share__item">
-				<a href="https://plus.google.com/share?url=<?php echo $permalink; ?>" class="share-link share-link--googleplus">Google+</a>
+				<a href="https://plus.google.com/share?url=<?php echo $permalink; ?>" target="_blank" class="share-link share-link--googleplus">Google+</a>
 			</li>
 		</ul>
 	</div>
